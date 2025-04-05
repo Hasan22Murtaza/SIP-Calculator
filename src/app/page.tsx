@@ -35,27 +35,27 @@ export default function Home() {
   const [lumpSumMaturityAmount, setLumpSumMaturityAmount] = useState(0);
 
   const chartRef = useRef(null);
-  const chartInstance = useRef(null);
+  const chartInstance: any = useRef(null);
 
   // Function to switch tabs
-  const switchTab = (tab) => {
+  const switchTab = (tab: any) => {
     setActiveTab(tab);
   };
 
   // Handlers for SIP inputs
-  const handleStepUpChange = (event) => {
+  const handleStepUpChange = (event: any) => {
     setIsStepUpChecked(event.target.checked);
   };
 
-  const handleStepUpValueChange = (event) => {
+  const handleStepUpValueChange = (event: any) => {
     setStepUpValue(Number.parseInt(event.target.value) || 0);
   };
 
-  const handleInflationChange = (event) => {
+  const handleInflationChange = (event: any) => {
     setInflationChecked(event.target.checked);
   };
 
-  const handleInflationValueChange = (event) => {
+  const handleInflationValueChange = (event: any) => {
     setInflationValue(Number.parseInt(event.target.value) || 0);
   };
 
@@ -181,7 +181,7 @@ export default function Home() {
   ]);
 
   // Format currency
-  const formatCurrency = (amount) => {
+  const formatCurrency = (amount: any) => {
     return new Intl.NumberFormat("en-IN", {
       style: "currency",
       currency: "INR",
