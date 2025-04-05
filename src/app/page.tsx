@@ -1182,7 +1182,7 @@ import { useEffect, useState, useRef } from "react";
 import dynamic from "next/dynamic";
 
 // Dynamically import ApexCharts with no SSR
-const ApexCharts = dynamic(() => import("apexcharts"), { ssr: false });
+//const ApexCharts = dynamic(() => import("apexcharts"), { ssr: false });
 
 export default function Home() {
   // State for active tab
@@ -1797,43 +1797,109 @@ export default function Home() {
             <div className="relative">
               <div className="flex flex-col gap-3 mb-8">
                 <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
-                  {activeTab === "sip"
-                    ? "SIP Calculator"
-                    : "Lump Sum Calculator"}{" "}
-                  – Systematic Investment Plan Calculator
+                  SIP Calculator – Systematic Investment Plan Calculator
                 </h2>
                 <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498]">
-                  {activeTab === "sip"
-                    ? "Prospective investors can think that SIPs and mutual funds are the same. However, SIPs are merely a method of investing in mutual funds, the other method being a lump sum. A SIP calculator is a tool that helps you determine the returns you can avail when parking your funds in such investment tools. Systematic Investment Plan or SIP is a process of investing a fixed sum of money in mutual funds at regular intervals. SIPs usually allow you to invest weekly, quarterly, or monthly."
-                    : "A Lump Sum investment is a one-time investment where you invest a significant amount at once rather than in periodic installments. This calculator helps you determine the potential returns on your one-time investment over a specified period. Lump sum investments are ideal when you have a substantial amount ready to invest and believe the market conditions are favorable."}
+                  Prospective investors can think that SIPs and mutual funds are
+                  the same. However, SIPs are merely a method of investing in
+                  mutual funds, the other method being a lump sum. A SIP
+                  calculator is a tool that helps you determine the returns you
+                  can avail when parking your funds in such investment tools.
+                  Systematic Investment Plan or SIP is a process of investing a
+                  fixed sum of money in mutual funds at regular intervals. SIPs
+                  usually allow you to invest weekly, quarterly, or monthly.
                 </p>
               </div>
 
               <div className="flex flex-col gap-5">
                 <div className="flex flex-col gap-3">
                   <h3 className="text-2xl text-my-black font-semibold dark:text-white">
-                    {activeTab === "sip"
-                      ? "What is SIP?"
-                      : "What is Lump Sum Investment?"}
+                    What is SIP?
                   </h3>
                   <p className="text-base text-[rgba(2,11,30,0.6)] leading-8 dark:text-[#7B8498]">
-                    {activeTab === "sip"
-                      ? "A Systematic Investment Plan (SIP) is a method of investing a fixed sum in mutual funds at regular intervals—monthly or quarterly. It helps you take advantage of compounding and rupee cost averaging, thus minimizing the risks of market volatility."
-                      : "A Lump Sum investment is a one-time investment where you invest a significant amount at once. Unlike SIP, where you invest periodically, in a lump sum investment, you put all your money to work immediately  where you invest periodically, in a lump sum investment, you put all your money to work immediately. This approach can be beneficial when markets are at a low point or when you expect them to rise consistently over your investment horizon."}
+                    A Systematic Investment Plan (SIP) is a method of investing
+                    a fixed sum in mutual funds at regular intervals—monthly or
+                    quarterly. It helps you take advantage of compounding and
+                    rupee cost averaging, thus minimizing the risks of market
+                    volatility.
                   </p>
                 </div>
 
                 <div className="flex flex-col gap-3">
                   <h3 className="text-2xl text-my-black font-semibold dark:text-white">
-                    {activeTab === "sip"
-                      ? "Why Use an SIP Calculator?"
-                      : "Why Use a Lump Sum Calculator?"}
+                    Why Use an SIP Calculator?
                   </h3>
                   <p className="text-base text-[rgba(2,11,30,0.6)] leading-8 dark:text-[#7B8498]">
-                    {activeTab === "sip"
-                      ? "With our easy-to-use SIP calculator, you can estimate your potential returns before making your investment decisions. Whether you're aiming for long-term wealth creation or looking to save for specific goals, an SIP calculator provides you with a roadmap for your investment journey."
-                      : "Our Lump Sum calculator helps you project the future value of your one-time investment based on expected returns and time period. It allows you to make informed decisions about whether a lump sum investment aligns with your financial goals and risk tolerance. You can compare different scenarios and determine the optimal investment strategy."}
+                    With our easy-to-use SIP calculator, you can estimate your
+                    potential returns before making your investment decisions.
+                    Whether you are aiming for long-term wealth creation or
+                    looking to save for specific goals, an SIP calculator
+                    provides you with a roadmap for your investment journey.
                   </p>
+                </div>
+                <div className="flex flex-col gap-3 ">
+                  <h3 className="text-2xl text-my-black font-semibold dark:text-white">
+                    How Does the SIP Calculator Work?
+                  </h3>
+                  <p className="text-base text-[rgba(2,11,30,0.6)] leading-8 dark:text-[#7B8498]">
+                    The SIP calculator considers three key variables:
+                  </p>
+                  <ul className="flex flex-col gap-4 list-disc pl-5">
+                    <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
+                      <span className="text-my-black dark:text-white font-medium">
+                        Investment Amount:
+                      </span>{" "}
+                      The fixed sum you plan to invest regularly.
+                    </li>
+                    <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
+                      <span className="text-my-black font-medium dark:text-white">
+                        Time Period:{" "}
+                      </span>
+                      The duration for which you plan to invest.
+                    </li>
+                    <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
+                      <span className="text-my-black font-medium dark:text-white">
+                        Expected Return (CAGR):{" "}
+                      </span>{" "}
+                      The average annual return you expect on your mutual fund
+                      investment.
+                    </li>
+                  </ul>
+                </div>
+                <div className="relative lg:pt-[30px] pb-[50px]">
+                  <div className="max-w-6xl mx-auto">
+                    <div className="relative">
+                      <div className="flex flex-col gap-3">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
+                          How to Use the SIP Calculator?
+                        </h2>
+                        <ul className="flex flex-col gap-4 list-disc pl-5 mb-0">
+                          <li className="md:text-base text-sm text-[#434B5B] dark:text-[#7B8498]">
+                            <span className="text-my-black font-medium dark:text-white">
+                              Enter the SIP Amount:
+                            </span>{" "}
+                            This is the amount you want to invest regularly.
+                          </li>
+                          <li className="md:text-base text-sm text-[#434B5B] dark:text-[#7B8498]">
+                            <span className="text-my-black font-medium dark:text-white">
+                              Set the Investment Duration:{" "}
+                            </span>
+                            Choose the period you want to stay invested. It
+                            could range from a few months to several years.
+                          </li>
+                          <li className="md:text-base text-sm text-[#434B5B] dark:text-[#7B8498]">
+                            <span className="text-my-black font-medium dark:text-white leading-8">
+                              Select Expected Returns:{" "}
+                            </span>{" "}
+                            The expected return rate (CAGR) is typically based
+                            on the historical performance of the mutual funds
+                            you are considering. You can enter your own estimate
+                            or use the calculator’s default.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
