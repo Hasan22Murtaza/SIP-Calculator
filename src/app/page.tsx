@@ -690,7 +690,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                {/* <div className="relative lg:pt-[30px] pb-[50px]">
+                <div className="relative lg:pt-[30px] pb-[50px]">
                   <div className="max-w-6xl mx-auto">
                     <div className="relative">
                       <div className="flex flex-col gap-3">
@@ -724,7 +724,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
