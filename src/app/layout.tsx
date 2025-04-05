@@ -29,7 +29,7 @@ export default function RootLayout({
     // Check if we're in the browser environment
     if (typeof window !== "undefined") {
       // Function to toggle between light and dark mode
-      const toggleTheme = (isDark) => {
+      const toggleTheme = (isDark: any) => {
         if (isDark) {
           document.documentElement.classList.add("dark");
           document.documentElement.classList.remove("light");
@@ -55,15 +55,17 @@ export default function RootLayout({
 
       // Set up event listeners for theme toggle buttons
       const setupThemeToggleListeners = () => {
-        const mobileToggle = document.getElementById("dark-mode-toggle-mobile");
-        const desktopToggle = document.getElementById(
+        const mobileToggle: any = document.getElementById(
+          "dark-mode-toggle-mobile"
+        );
+        const desktopToggle: any = document.getElementById(
           "dark-mode-toggle-desktop"
         );
 
         if (mobileToggle) {
           mobileToggle.checked =
             document.documentElement.classList.contains("dark");
-          mobileToggle.addEventListener("change", (e) => {
+          mobileToggle.addEventListener("change", (e: any) => {
             toggleTheme(e.target.checked);
             if (desktopToggle) desktopToggle.checked = e.target.checked;
           });
@@ -72,7 +74,7 @@ export default function RootLayout({
         if (desktopToggle) {
           desktopToggle.checked =
             document.documentElement.classList.contains("dark");
-          desktopToggle.addEventListener("change", (e) => {
+          desktopToggle.addEventListener("change", (e: any) => {
             toggleTheme(e.target.checked);
             if (mobileToggle) mobileToggle.checked = e.target.checked;
           });
