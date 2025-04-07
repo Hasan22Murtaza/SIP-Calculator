@@ -1769,7 +1769,7 @@ input[type="checkbox"]:checked {
     background-color: transparent;
   }
 
-  /* .pie-chart .apexcharts-canvas:nth-child(1) {
+  .pie-chart .apexcharts-canvas:nth-child(1) {
     display: none;
-  } */
+  }
 }
