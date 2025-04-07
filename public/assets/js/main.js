@@ -138,87 +138,87 @@ $(document).ready(function () {
   });
 });
 
-var options = {
-  series: [35, 65],
-  chart: {
-    width: 370,
-    type: "donut",
-    events: {
-      render: function () {
-        // Forcefully remove stroke after the chart is rendered
-        setTimeout(function () {
-          // Use querySelectorAll to get each slice's path element
-          document
-            .querySelectorAll(".apexcharts-slices .apexcharts-series path")
-            .forEach(function (path) {
-              path.style.stroke = "none"; // Remove stroke
-              path.style.strokeWidth = "0"; // Set stroke width to 0
-            });
-        }, 100); // Small delay to make sure the chart rendering is complete
-      },
-    },
-  },
+// var options = {
+//   series: [35, 65],
+//   chart: {
+//     width: 370,
+//     type: "donut",
+//     events: {
+//       render: function () {
+//         // Forcefully remove stroke after the chart is rendered
+//         setTimeout(function () {
+//           // Use querySelectorAll to get each slice's path element
+//           document
+//             .querySelectorAll(".apexcharts-slices .apexcharts-series path")
+//             .forEach(function (path) {
+//               path.style.stroke = "none"; // Remove stroke
+//               path.style.strokeWidth = "0"; // Set stroke width to 0
+//             });
+//         }, 100); // Small delay to make sure the chart rendering is complete
+//       },
+//     },
+//   },
 
-  plotOptions: {
-    pie: {
-      startAngle: -90,
-      endAngle: 270,
-      donut: {
-        size: "80%", // Adjust the donut thickness
-      },
-      stroke: {
-        show: false, // Disable stroke for pie slices
-      },
-    },
-  },
+//   plotOptions: {
+//     pie: {
+//       startAngle: -90,
+//       endAngle: 270,
+//       donut: {
+//         size: "80%", // Adjust the donut thickness
+//       },
+//       stroke: {
+//         show: false, // Disable stroke for pie slices
+//       },
+//     },
+//   },
 
-  dataLabels: {
-    enabled: false, // Disable data labels
-  },
+//   dataLabels: {
+//     enabled: false, // Disable data labels
+//   },
 
-  // Color configuration for each slice
-  colors: [
-    "#159D2C", // First slice color
-    "#0045D3", // Second slice color
-  ],
+//   // Color configuration for each slice
+//   colors: [
+//     "#159D2C", // First slice color
+//     "#0045D3", // Second slice color
+//   ],
 
-  fill: {
-    type: "gradient",
-    gradient: {
-      type: "linear", // Gradient direction
-      shadeIntensity: 1,
-      gradientToColors: ["#0045D3"], // Gradient ends with #0045D3
-      stops: [0, 100], // Gradient stops
-      opacityFrom: 1, // Full opacity for the start color
-      opacityTo: 1, // Full opacity for the end color
-    },
-  },
+//   fill: {
+//     type: "gradient",
+//     gradient: {
+//       type: "linear", // Gradient direction
+//       shadeIntensity: 1,
+//       gradientToColors: ["#0045D3"], // Gradient ends with #0045D3
+//       stops: [0, 100], // Gradient stops
+//       opacityFrom: 1, // Full opacity for the start color
+//       opacityTo: 1, // Full opacity for the end color
+//     },
+//   },
 
-  legend: {
-    show: false, // Hide the legend
-  },
+//   legend: {
+//     show: false, // Hide the legend
+//   },
 
-  title: {
-    text: "",
-  },
+//   title: {
+//     text: "",
+//   },
 
-  responsive: [
-    {
-      breakpoint: 480,
-      options: {
-        chart: {
-          width: 350,
-        },
-        legend: {
-          position: "bottom",
-        },
-      },
-    },
-  ],
-};
+//   responsive: [
+//     {
+//       breakpoint: 480,
+//       options: {
+//         chart: {
+//           width: 350,
+//         },
+//         legend: {
+//           position: "bottom",
+//         },
+//       },
+//     },
+//   ],
+// };
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
+// var chart = new ApexCharts(document.querySelector("#chart"), options);
+// chart.render();
 
 /*============checked box checked input show js==================*/
 function myFunction() {

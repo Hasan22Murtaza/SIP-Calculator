@@ -22,7 +22,7 @@
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -42,9 +42,11 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -85,7 +87,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -129,7 +131,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -224,9 +227,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -273,7 +276,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -366,7 +369,8 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -451,7 +455,9 @@ p {
   line-height: 2rem;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -461,19 +467,19 @@ p {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -481,24 +487,24 @@ p {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 ::backdrop {
@@ -511,19 +517,19 @@ p {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -531,24 +537,24 @@ p {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 .nav_link {
@@ -568,7 +574,8 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.nav_link:hover, .nav_link:focus {
+.nav_link:hover,
+.nav_link:focus {
   --tw-text-opacity: 1;
   color: rgb(21 157 44 / var(--tw-text-opacity));
 }
@@ -585,16 +592,17 @@ p {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-  --tw-content: '';
+  --tw-content: "";
   content: var(--tw-content);
 }
 
-.nav_link:hover:before,.nav_link:focus:before {
+.nav_link:hover:before,
+.nav_link:focus:before {
   opacity: 1;
 }
 
-input[type='checkbox']:checked{
-  background-image: url('../images/tick.png');
+input[type="checkbox"]:checked {
+  background-image: url("../images/tick.png");
 }
 
 /* .amount-rangelider .rangeslider{
@@ -655,21 +663,31 @@ input[type='checkbox']:checked{
   outline: none;
   transition: background 0.3s ease;
   position: relative; /* Make sure the thumb can be positioned relative to the track */
-
-
 }
 
 /* Custom background fill (in-progress value) */
 .rangeslider::-webkit-slider-runnable-track {
   height: 4px;
   border-radius: 100px;
-  background: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #159d2c33 50%, #159d2c33 100%);
+  background: linear-gradient(
+    to right,
+    #4caf50 0%,
+    #4caf50 50%,
+    #159d2c33 50%,
+    #159d2c33 100%
+  );
 }
 
 .rangeslider::-moz-range-track {
   height: 8px;
   border-radius: 5px;
-  background: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #159d2c33 50%, #159d2c33 100%);
+  background: linear-gradient(
+    to right,
+    #4caf50 0%,
+    #4caf50 50%,
+    #159d2c33 50%,
+    #159d2c33 100%
+  );
 }
 
 /* Custom handle (thumb) */
@@ -679,12 +697,14 @@ input[type='checkbox']:checked{
   width: 22px;
   height: 22px;
   background: #fff;
-  border:4px solid #159D2C;
+  border: 4px solid #159d2c;
   border-radius: 50%;
   cursor: pointer;
   position: relative; /* Position relative for vertical alignment */
   top: 50%; /* Move the handle to the center of the track */
-  transform: translateY(-50%); /* Offset the handle by 50% of its height to truly center it */
+  transform: translateY(
+    -50%
+  ); /* Offset the handle by 50% of its height to truly center it */
   transition: background 0.3s ease;
 }
 
@@ -700,52 +720,52 @@ input[type='checkbox']:checked{
   transform: translateY(-50%);
 }
 
-.dark  .light-btn{
+.dark .light-btn {
   background: transparent;
   border-radius: 8px;
 }
 
-.light-btn{
-  background: #020B1E;
+.light-btn {
+  background: #020b1e;
   border-radius: 8px;
 }
 
-.dark-btn{
+.dark-btn {
   background: transparent;
   border-radius: 8px;
 }
 
-.dark  .dark-btn{
+.dark .dark-btn {
   background: #fff;
   border-radius: 8px;
 }
 
-.dark-btn svg path{
+.dark-btn svg path {
   stroke: #263c6b;
 }
 
-.nav-open .nav-line:nth-child(1){
+.nav-open .nav-line:nth-child(1) {
   transform: rotate(45deg);
   top: 10px;
   position: relative;
 }
 
-.nav-open .nav-line:nth-child(2){
+.nav-open .nav-line:nth-child(2) {
   opacity: 0;
 }
 
-.nav-open .nav-line:nth-child(3){
+.nav-open .nav-line:nth-child(3) {
   transform: rotate(-45deg);
   top: -4px;
   position: relative;
 }
 
-#tabs li.active{
-  border-color: #159D2C;
-  color: #159D2C;
+#tabs li.active {
+  border-color: #159d2c;
+  color: #159d2c;
 }
 
-.pie-chart .apexcharts-svg  .apexcharts-slices .apexcharts-series  path {
+.pie-chart .apexcharts-svg .apexcharts-slices .apexcharts-series path {
   stroke: none !important;
   /* Ensure stroke is removed */
   stroke-width: 0 !important;
@@ -951,11 +971,15 @@ input[type='checkbox']:checked{
 
 .-translate-y-\[200\%\] {
   --tw-translate-y: -200%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -968,8 +992,8 @@ input[type='checkbox']:checked{
 
 .appearance-none {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .grid-cols-2 {
@@ -1102,11 +1126,11 @@ input[type='checkbox']:checked{
 }
 
 .border-\[rgba\(2\2c 11\2c 30\2c 0\.3\)\] {
-  border-color: rgba(2,11,30,0.3);
+  border-color: rgba(2, 11, 30, 0.3);
 }
 
 .border-\[rgba\(21\2c 157\2c 44\2c 0\.20\)\] {
-  border-color: rgba(21,157,44,0.20);
+  border-color: rgba(21, 157, 44, 0.2);
 }
 
 .border-transparent {
@@ -1134,7 +1158,7 @@ input[type='checkbox']:checked{
 }
 
 .bg-\[rgba\(21\2c 157\2c 44\2c 0\.05\)\] {
-  background-color: rgba(21,157,44,0.05);
+  background-color: rgba(21, 157, 44, 0.05);
 }
 
 .bg-blue {
@@ -1152,8 +1176,20 @@ input[type='checkbox']:checked{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[linear-gradient\(270deg\2c rgba\(9\2c 186\2c 39\2c 0\.20\)_0\%\2c rgba\(182\2c 248\2c 77\2c 0\.20\)_100\%\)\] {
-  background-image: linear-gradient(270deg,rgba(9,186,39,0.20) 0%,rgba(182,248,77,0.20) 100%);
+.bg-\[linear-gradient\(270deg\2c
+  rgba\(9\2c
+  186\2c
+  39\2c
+  0\.20\)_0\%\2c
+  rgba\(182\2c
+  248\2c
+  77\2c
+  0\.20\)_100\%\)\] {
+  background-image: linear-gradient(
+    270deg,
+    rgba(9, 186, 39, 0.2) 0%,
+    rgba(182, 248, 77, 0.2) 100%
+  );
 }
 
 .p-0 {
@@ -1354,7 +1390,7 @@ input[type='checkbox']:checked{
 }
 
 .text-\[rgba\(2\2c 11\2c 30\2c 0\.6\)\] {
-  color: rgba(2,11,30,0.6);
+  color: rgba(2, 11, 30, 0.6);
 }
 
 .text-black {
@@ -1383,9 +1419,15 @@ input[type='checkbox']:checked{
 }
 
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1468,7 +1510,7 @@ input[type='checkbox']:checked{
 }
 
 :is(.dark .dark\:border-\[rgba\(255\2c 255\2c 255\2c 0\.3\)\]) {
-  border-color: rgba(255,255,255,0.3);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 :is(.dark .dark\:bg-\[\#020B1E\]) {
@@ -1630,7 +1672,9 @@ input[type='checkbox']:checked{
 
   .lg\:translate-y-0 {
     --tw-translate-y: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-6 {
@@ -1724,4 +1768,8 @@ input[type='checkbox']:checked{
   :is(.dark .dark\:lg\:bg-transparent) {
     background-color: transparent;
   }
+
+  /* .pie-chart .apexcharts-canvas:nth-child(1) {
+    display: none;
+  } */
 }
