@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import "rangeslider.js";
+// import "rangeslider.js";
 // import "rangeslider.js/dist/rangeslider.css";
 // import dynamic from "next/dynamic";
 
@@ -36,7 +36,6 @@ export default function Home() {
 
   const chartRef = useRef(null);
   const chartInstance: any = useRef(null);
-  const hasRendered = useRef(false);
 
   // Function to switch tabs
   const switchTab = (tab: any) => {
@@ -119,8 +118,6 @@ export default function Home() {
 
   // Initialize ApexCharts
   useEffect(() => {
-    console.log(chartRef.current);
-
     if (typeof window === "undefined" || !chartRef.current) return;
 
     // Clean up previous chart instance
