@@ -605,119 +605,42 @@ input[type="checkbox"]:checked {
   background-image: url("../images/tick.png");
 }
 
-/* .amount-rangelider .rangeslider{
-  background: rgba(21, 157, 44, 0.2)!important;
-  position: relative!important;
-  border-radius: 100px!important;
-  box-shadow: none!important;
-  width: 100%!important;
-  height: 4px!important;
-  max-width: 100%!important;
+.amount-rangelider .rangeslider {
+  background: rgba(21, 157, 44, 0.2) !important;
+  position: relative !important;
+  border-radius: 100px !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  height: 4px !important;
+  max-width: 100% !important;
   margin: auto;
 }
 
 .amount-rangelider .rangeslider__fill {
-  background: #159D2C!important;
+  background: #159d2c !important;
 }
 
-.amount-rangelider .rangeslider--horizontal .rangeslider__handle{
-  top: -9px!important;
+.amount-rangelider .rangeslider--horizontal .rangeslider__handle {
+  top: -9px !important;
 }
 
-.amount-rangelider .rangeslider__handle{
-  width: 22px!important;
-  height: 22px!important;
-  background: #159D2C!important;
+.amount-rangelider .rangeslider__handle {
+  width: 22px !important;
+  height: 22px !important;
+  background: #159d2c !important;
   box-shadow: none !important;
-  border:none!important;
+  border: none !important;
 }
 
-.amount-rangelider .rangeslider__handle:after{
-  width: 14px!important;
-  height:14px !important;
-  background: #fff!important;
+.amount-rangelider .rangeslider__handle:after {
+  width: 14px !important;
+  height: 14px !important;
+  background: #fff !important;
   box-shadow: none !important;
 }
 
-.dark  .amount-rangelider .rangeslider__handle:after{
-  background: #020b1e!important;
-} */
-
-/* Style for the container */
-.slider-container {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Custom range slider */
-.rangeslider {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 4px; /* Track height */
-  background: #159d2c33;
-  border-radius: 100px;
-  outline: none;
-  transition: background 0.3s ease;
-  position: relative; /* Make sure the thumb can be positioned relative to the track */
-}
-
-/* Custom background fill (in-progress value) */
-.rangeslider::-webkit-slider-runnable-track {
-  height: 4px;
-  border-radius: 100px;
-  background: linear-gradient(
-    to right,
-    #4caf50 0%,
-    #4caf50 50%,
-    #159d2c33 50%,
-    #159d2c33 100%
-  );
-}
-
-.rangeslider::-moz-range-track {
-  height: 8px;
-  border-radius: 5px;
-  background: linear-gradient(
-    to right,
-    #4caf50 0%,
-    #4caf50 50%,
-    #159d2c33 50%,
-    #159d2c33 100%
-  );
-}
-
-/* Custom handle (thumb) */
-.rangeslider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 22px;
-  height: 22px;
-  background: #fff;
-  border: 4px solid #159d2c;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative; /* Position relative for vertical alignment */
-  top: 50%; /* Move the handle to the center of the track */
-  transform: translateY(
-    -50%
-  ); /* Offset the handle by 50% of its height to truly center it */
-  transition: background 0.3s ease;
-}
-
-/* For Firefox */
-.rangeslider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #4caf50;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.dark .amount-rangelider .rangeslider__handle:after {
+  background: #020b1e !important;
 }
 
 .dark .light-btn {

@@ -83,25 +83,26 @@ export default function RootLayout({
 
       // Set up the listeners after a short delay to ensure DOM is ready
       setTimeout(setupThemeToggleListeners, 100);
+
+      const burger: HTMLElement | null = document.querySelector(".burg");
+      const toggleButton: HTMLElement | null =
+        document.getElementById("toggle-button");
+      const toggleMenu: HTMLElement | null =
+        document.getElementById("toggle-menu");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        if (toggleButton && toggleMenu) {
+          toggleButton.addEventListener("click", () => {
+            const nav = document.querySelector("nav");
+            if (nav) {
+              nav.classList.toggle("nav-open");
+            }
+            toggleMenu.classList.toggle("-translate-y-[200%]");
+          });
+        }
+      });
     }
   }, []);
-
-  // const burger: HTMLElement | null = document.querySelector(".burg");
-  // const toggleButton: HTMLElement | null =
-  //   document.getElementById("toggle-button");
-  // const toggleMenu: HTMLElement | null = document.getElementById("toggle-menu");
-
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   if (toggleButton && toggleMenu) {
-  //     toggleButton.addEventListener("click", () => {
-  //       const nav = document.querySelector("nav");
-  //       if (nav) {
-  //         nav.classList.toggle("nav-open");
-  //       }
-  //       toggleMenu.classList.toggle("-translate-y-[200%]");
-  //     });
-  //   }
-  // });
 
   return (
     <>
@@ -122,7 +123,7 @@ export default function RootLayout({
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/rangeslider.js/dist/rangeslider.css"
           /> */}
-          <link rel="stylesheet" href="assets/css/apexcharts.min.css" />
+          {/* <link rel="stylesheet" href="assets/css/apexcharts.min.css" /> */}
           <link rel="stylesheet" href="assets/css/style.css" />
         </head>
         <body>
@@ -708,10 +709,10 @@ export default function RootLayout({
             src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
           ></script>
           <script src="https://cdn.jsdelivr.net/npm/rangeslider.js/dist/rangeslider.min.js"></script>
-          <script src="assets/js/apexcharts.min.js"></script>
+          {/* <script src="assets/js/apexcharts.min.js"></script> */}
 
-          <script src="assets/js/main.js"></script>
-          <script src="assets/js/jquery-easing.js"></script>
+          {/* <script src="assets/js/main.js"></script> */}
+          {/* <script src="assets/js/jquery-easing.js"></script> */}
         </body>
       </html>
     </>

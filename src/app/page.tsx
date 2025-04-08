@@ -16,9 +16,9 @@ export default function Home() {
   const [investment, setInvestment] = useState(11500);
   const [rate, setRate] = useState(20);
   const [years, setYears] = useState(10);
-  const [isStepUpChecked, setIsStepUpChecked] = useState(true);
+  const [isStepUpChecked, setIsStepUpChecked] = useState(false);
   const [stepUpValue, setStepUpValue] = useState(0);
-  const [inflationChecked, setInflationChecked] = useState(true);
+  const [inflationChecked, setInflationChecked] = useState(false);
   const [inflationValue, setInflationValue] = useState(0);
 
   // State for Lump Sum calculator
@@ -36,6 +36,26 @@ export default function Home() {
 
   const chartRef = useRef(null);
   const chartInstance: any = useRef(null);
+  const sliderRefs = useRef([]);
+
+  const updateSliderValue = (slider: any, value: any) => {
+    slider.style.setProperty("--slider-value", value);
+  };
+
+  useEffect(() => {
+    // Initialize each slider value at page load
+    sliderRefs.current.forEach((slider: any) => {
+      if (slider) {
+        updateSliderValue(slider, slider.value);
+      }
+    });
+  }, []);
+
+  const handleInputChange = (event: any) => {
+    const slider = event.target;
+    const value = slider.value;
+    updateSliderValue(slider, value);
+  };
 
   // Function to switch tabs
   const switchTab = (tab: any) => {
