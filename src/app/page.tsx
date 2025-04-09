@@ -34,7 +34,7 @@ export default function Home() {
   const [lumpSumEstimatedReturns, setLumpSumEstimatedReturns] = useState(0);
   const [lumpSumMaturityAmount, setLumpSumMaturityAmount] = useState(0);
 
-  const chartRef = useRef(null);
+  const chartRef = useRef<HTMLDivElement>(null);
   const chartInstance: any = useRef(null);
   const sliderRefs = useRef([]);
 
@@ -179,10 +179,25 @@ export default function Home() {
     };
 
     // Create new chart
+    // import("apexcharts").then((ApexChartsModule) => {
+    //   const ApexCharts = ApexChartsModule.default;
+    //   chartInstance.current = new ApexCharts(chartRef.current, options);
+    //   chartInstance.current.render();
+    // });
+
     import("apexcharts").then((ApexChartsModule) => {
       const ApexCharts = ApexChartsModule.default;
       chartInstance.current = new ApexCharts(chartRef.current, options);
-      chartInstance.current.render();
+      chartInstance.current.render().then(() => {
+        // 👇 Cleanup duplicate chart canvases after render
+        const allCharts: any = document.querySelectorAll(".apexcharts-canvas");
+        if (allCharts.length > 1) {
+          allCharts[0].style.display = "none";
+          // for (let i = 1; i < allCharts.length; i++) {
+          //   allCharts[i].style.display = "none";
+          // }
+        }
+      });
     });
 
     // Cleanup function
@@ -199,6 +214,22 @@ export default function Home() {
     lumpSumInvestment,
     lumpSumEstimatedReturns,
   ]);
+
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     // Select all elements that have the 'apexcharts-canvas' class
+  //     const elements: any = document.querySelectorAll(".apexcharts-canvas");
+  //     console.log(elements);
+
+  //     if (elements.length > 1) {
+  //       for (let i = 1; i < elements.length; i++) {
+  //         elements[i].style.display = "none";
+  //       }
+  //     }
+  //   }, 100); // Adjust if needed
+
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   // Format currency
   const formatCurrency = (amount: any) => {
@@ -624,6 +655,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                {/* <div ref={chartRef} id="chart" /> */}
                 <div className="border-t border-[#DCD7D7] dark:border-[#263c6b] p-6">
                   <button className="w-full py-4 px-8 rounded-xl bg-blue text-base text-white font-medium transition-all duration-500 hover:bg-[#236bff]">
                     Start Your {activeTab === "sip" ? "SIP" : "Investment"}
