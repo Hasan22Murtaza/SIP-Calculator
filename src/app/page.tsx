@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 // import "rangeslider.js";
-// import "rangeslider.js/dist/rangeslider.css";
+import "rangeslider.js/dist/rangeslider.css";
 // import dynamic from "next/dynamic";
 
 // Dynamically import ApexCharts with no SSR

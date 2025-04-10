@@ -3,112 +3,118 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply scroll-smooth overflow-x-hidden;
-    }
+  html {
+    @apply scroll-smooth overflow-x-hidden;
+  }
 
-    body {
-        @apply font-inter font-normal;
-    }
+  body {
+    @apply font-inter font-normal;
+  }
 
-    p {
-        @apply text-sm font-normal leading-8 m-0;
-    }
+  p {
+    @apply text-sm font-normal leading-8 m-0;
+  }
 }
 
 @layer components {
-   .nav_link{
-        @apply text-base text-my-black font-medium transition-all duration-500 relative dark:text-white;
-   }
-   .nav_link:hover, .nav_link:focus{
-        @apply text-dark-green;
-   }
-   .nav_link::before{
-        @apply content-[''] absolute top-[53px] left-0 w-full h-[2px] bg-dark-green opacity-0 transition-all duration-500;
-   }
-   .nav_link:hover:before,.nav_link:focus:before{
+  .nav_link {
+    @apply text-base text-my-black font-medium transition-all duration-500 relative dark:text-white;
+  }
+  .nav_link:hover,
+  .nav_link:focus {
+    @apply text-dark-green;
+  }
+  .nav_link::before {
+    @apply content-[''] absolute top-[53px] left-0 w-full h-[2px] bg-dark-green opacity-0 transition-all duration-500;
+  }
+  .nav_link:hover:before,
+  .nav_link:focus:before {
     @apply opacity-100;
+  }
+  input[type="checkbox"]:checked {
+    background-image: url("../images/tick.png");
+  }
+  .amount-rangelider .rangeslider {
+    background: rgba(21, 157, 44, 0.2) !important;
+    position: relative !important;
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    height: 4px !important;
+    max-width: 100% !important;
+    margin: auto;
+  }
+  .amount-rangelider .rangeslider__fill {
+    background: #159d2c !important;
+  }
+  .amount-rangelider .rangeslider--horizontal .rangeslider__handle {
+    top: -9px !important;
+  }
+  .amount-rangelider .rangeslider__handle {
+    width: 22px !important;
+    height: 22px !important;
+    background: #159d2c !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .amount-rangelider .rangeslider__handle:after {
+    width: 14px !important;
+    height: 14px !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+  .dark .amount-rangelider .rangeslider__handle:after {
+    background: #020b1e !important;
+  }
+  .dark .light-btn {
+    background: transparent;
+    border-radius: 8px;
+  }
+  .light-btn {
+    background: #020b1e;
+    border-radius: 8px;
+  }
+  .dark-btn {
+    background: transparent;
+    border-radius: 8px;
+  }
+  .dark .dark-btn {
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .dark-btn svg path {
+    stroke: #263c6b;
+  }
+  .nav-open .nav-line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+    position: relative;
+  }
+  .nav-open .nav-line:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-open .nav-line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -4px;
+    position: relative;
+  }
+  #tabs li.active {
+    border-color: #159d2c;
+    color: #159d2c;
+  }
+
+  .pie-chart .apexcharts-svg .apexcharts-slices .apexcharts-series path {
+    stroke: none !important; /* Ensure stroke is removed */
+    stroke-width: 0 !important; /* Set stroke width to 0 */
+  }
+  @media (max-width: 990px) {
+    .main-link {
+      border-bottom: 1px solid #dcd7d7;
     }
-    input[type='checkbox']:checked{
-        background-image: url('../images/tick.png');
+    .nav_link::before {
+      top: 25px;
     }
-    .amount-rangelider .rangeslider{
-        background: rgba(21, 157, 44, 0.2)!important;
-        position: relative!important;
-        border-radius: 100px!important;
-        box-shadow: none!important;
-        width: 100%!important;
-        height: 4px!important;
-        max-width: 100%!important;
-        margin: auto;
-       }
-       .amount-rangelider .rangeslider__fill {
-          background: #159D2C!important;
-      }
-      .amount-rangelider .rangeslider--horizontal .rangeslider__handle{
-        top: -9px!important;
-      }
-      .amount-rangelider .rangeslider__handle{
-        width: 22px!important;
-        height: 22px!important;
-        background: #159D2C!important;
-        box-shadow: none !important;
-        border:none!important;
-      }
-    
-      .amount-rangelider .rangeslider__handle:after{
-          width: 14px!important;
-          height:14px !important;
-          background: #fff!important;
-          box-shadow: none !important;
-        }
-        .dark  .amount-rangelider .rangeslider__handle:after{
-            background: #020b1e!important;
-          }
-        .dark  .light-btn{
-          
-            background: transparent;
-            border-radius: 8px;
-        }
-        .light-btn{
-          
-            background: #020B1E;
-            border-radius: 8px;
-        }
-        .dark-btn{
-            background: transparent;
-            border-radius: 8px;
-        }
-       .dark  .dark-btn{
-           background: #fff;
-            border-radius: 8px;
-        }
-       
-       
-         .dark-btn svg path{
-            stroke: #263c6b;
-        }
-        .nav-open .nav-line:nth-child(1){
-            transform: rotate(45deg);
-            top: 10px;
-            position: relative;
-        }
-        .nav-open .nav-line:nth-child(2){
-            opacity: 0;
-        }
-        .nav-open .nav-line:nth-child(3){
-            transform: rotate(-45deg);
-            top: -4px;
-            position: relative;
-        }
-        #tabs li.active{
-            border-color: #159D2C;
-            color: #159D2C;
-        }
-       
-        .pie-chart .apexcharts-svg  .apexcharts-slices .apexcharts-series  path {
-            stroke: none !important;         /* Ensure stroke is removed */
-            stroke-width: 0 !important;      /* Set stroke width to 0 */
-        }
-        
+  }
 }

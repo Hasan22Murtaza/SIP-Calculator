@@ -3,7 +3,7 @@
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -25,6 +25,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState("Light");
+
   useEffect(() => {
     // Check if we're in the browser environment
     if (typeof window !== "undefined") {
@@ -34,10 +37,12 @@ export default function RootLayout({
           document.documentElement.classList.add("dark");
           document.documentElement.classList.remove("light");
           localStorage.setItem("theme", "dark");
+          setCurrentTheme("Dark");
         } else {
           document.documentElement.classList.add("light");
           document.documentElement.classList.remove("dark");
           localStorage.setItem("theme", "light");
+          setCurrentTheme("Light");
         }
       };
 
@@ -84,25 +89,27 @@ export default function RootLayout({
       // Set up the listeners after a short delay to ensure DOM is ready
       setTimeout(setupThemeToggleListeners, 100);
 
-      const burger: HTMLElement | null = document.querySelector(".burg");
-      const toggleButton: HTMLElement | null =
-        document.getElementById("toggle-button");
-      const toggleMenu: HTMLElement | null =
-        document.getElementById("toggle-menu");
+      // const burger: HTMLElement | null = document.querySelector(".burg");
+      // const toggleButton: HTMLElement | null =
+      //   document.getElementById("toggle-button");
+      // const toggleMenu: HTMLElement | null =
+      //   document.getElementById("toggle-menu");
 
-      document.addEventListener("DOMContentLoaded", () => {
-        if (toggleButton && toggleMenu) {
-          toggleButton.addEventListener("click", () => {
-            const nav = document.querySelector("nav");
-            if (nav) {
-              nav.classList.toggle("nav-open");
-            }
-            toggleMenu.classList.toggle("-translate-y-[200%]");
-          });
-        }
-      });
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   if (toggleButton && toggleMenu) {
+      //     toggleButton.addEventListener("click", () => {
+      //       const nav = document.querySelector("nav");
+      //       if (nav) {
+      //         nav.classList.toggle("nav-open");
+      //       }
+      //       toggleMenu.classList.toggle("-translate-y-[200%]");
+      //     });
+      //   }
+      // });
     }
   }, []);
+
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
     <>
@@ -132,15 +139,37 @@ export default function RootLayout({
             <nav className="fixed z-[1020] w-full bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b] flex justify-between py-5  items-center transition-all duration-200">
               <div className=" w-full mx-auto  px-3 max-w-6xl">
                 <div className="flex justify-start items-center">
-                  <button
+                  {/* <button
                     id="toggle-button"
                     className=" relative z-10  mr-2 w-8 h-8 block lg:hidden"
+                    onClick={toggleMenu}
                   >
                     <div className="flex flex-col gap-[5px]">
                       <span className="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line" />
                       <span className="w-[10px] h-[2px] bg-[#020B1E] dark:bg-white nav-line" />
                       <span className="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line" />
                     </div>
+                  </button> */}
+
+                  <button
+                    id="toggle-button"
+                    onClick={toggleMenu}
+                    className="relative z-10 mr-2 w-8 h-8 block lg:hidden"
+                  >
+                    {menuOpen ? (
+                      // Close (X) Icon
+                      <div className="flex items-center justify-center w-8 h-8">
+                        <span className="block w-5 h-0.5 bg-[#020B1E] dark:bg-white rotate-45 absolute"></span>
+                        <span className="block w-5 h-0.5 bg-[#020B1E] dark:bg-white -rotate-45 absolute"></span>
+                      </div>
+                    ) : (
+                      // Hamburger Icon
+                      <div className="flex flex-col gap-[5px]">
+                        <span className="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line" />
+                        <span className="w-[10px] h-[2px] bg-[#020B1E] dark:bg-white nav-line" />
+                        <span className="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line" />
+                      </div>
+                    )}
                   </button>
                   <a
                     href="#"
@@ -200,13 +229,19 @@ export default function RootLayout({
                       />
                     </svg>
                   </a>
-                  <ul
+                  {/* <ul
                     id="toggle-menu"
                     className="main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 -translate-y-[200%] lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c]  lg:rounded-none rounded-2xl"
+                  > */}
+                  <ul
+                    id="toggle-menu"
+                    className={`main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 ${
+                      menuOpen ? "translate-y-0" : "-translate-y-[200%]"
+                    } lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c] lg:rounded-none rounded-2xl`}
                   >
                     <div className="flex lg:hidden items-center justify-between p-5 border-b border-[#DCD7D7] dark:border-[#263c6b]">
                       <span className="text-sm font-medium text-[#020B1E] dark:text-white">
-                        Light Mode
+                        {currentTheme} Mode
                       </span>
                       {/* Dark Mode Toggle */}
                       <label

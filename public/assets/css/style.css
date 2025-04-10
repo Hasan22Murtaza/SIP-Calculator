@@ -604,6 +604,44 @@ p {
 input[type="checkbox"]:checked {
   background-image: url("../images/tick.png");
 }
+/* 
+.amount-rangelider .rangeslider {
+  background: rgba(21, 157, 44, 0.2) !important;
+  position: relative !important;
+  border-radius: 100px !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  height: 4px !important;
+  max-width: 100% !important;
+  margin: auto;
+}
+
+.amount-rangelider .rangeslider__fill {
+  background: #159d2c !important;
+}
+
+.amount-rangelider .rangeslider--horizontal .rangeslider__handle {
+  top: -9px !important;
+}
+
+.amount-rangelider .rangeslider__handle {
+  width: 22px !important;
+  height: 22px !important;
+  background: #159d2c !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.amount-rangelider .rangeslider__handle:after {
+  width: 14px !important;
+  height: 14px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+.dark .amount-rangelider .rangeslider__handle:after {
+  background: #020b1e !important;
+} */
 
 .amount-rangelider .rangeslider {
   background: rgba(21, 157, 44, 0.2) !important;
@@ -694,7 +732,15 @@ input[type="checkbox"]:checked {
   stroke-width: 0 !important;
   /* Set stroke width to 0 */
 }
+@media (max-width: 990px) {
+  .main-link {
+    border-bottom: 1px solid #dcd7d7;
+  }
 
+  .nav_link::before {
+    top: 25px;
+  }
+}
 .fixed {
   position: fixed;
 }
