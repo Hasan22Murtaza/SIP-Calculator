@@ -1,8 +1,11 @@
 "use client";
 
+import { useTheme } from "@/context/ThemeContext";
 import { useEffect, useState, useRef } from "react";
+import { Range } from "react-range";
+
 // import "rangeslider.js";
-import "rangeslider.js/dist/rangeslider.css";
+// import "rangeslider.js/dist/rangeslider.css";
 // import dynamic from "next/dynamic";
 
 // Dynamically import ApexCharts with no SSR
@@ -11,6 +14,18 @@ import "rangeslider.js/dist/rangeslider.css";
 export default function Home() {
   // State for active tab
   const [activeTab, setActiveTab] = useState("sip");
+
+  const MIN = 5000;
+  const MAX = 50000;
+  const STEP = 100;
+
+  const MIN_RATE = 0;
+  const MAX_RATE = 30;
+  const STEP_RATE = 0.5;
+
+  const MIN_YEAR = 1;
+  const MAX_YEAR = 30;
+  const STEP_YEAR = 1;
 
   // State for SIP calculator
   const [investment, setInvestment] = useState(11500);
@@ -240,6 +255,16 @@ export default function Home() {
     }).format(amount);
   };
 
+  const percentage = ((investment - MIN) / (MAX - MIN)) * 100;
+  const ratePercentage = ((rate - MIN_RATE) / (MAX_RATE - MIN_RATE)) * 100;
+  const yearPercentage = ((years - MIN_YEAR) / (MAX_YEAR - MIN_YEAR)) * 100;
+
+  const { isDark, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    console.log("Theme changed:", isDark);
+  }, [isDark]);
+
   return (
     <>
       <main>
@@ -330,7 +355,7 @@ export default function Home() {
                             />
                           </div>
                           <div className="pb-2 w-full amount-rangelider">
-                            <input
+                            {/* <input
                               id="investslider"
                               className="rangeslider"
                               type="range"
@@ -341,6 +366,40 @@ export default function Home() {
                               onChange={(e) =>
                                 setInvestment(Number.parseInt(e.target.value))
                               }
+                            /> */}
+                            <Range
+                              step={STEP}
+                              min={MIN}
+                              max={MAX}
+                              values={[investment]}
+                              onChange={(e) =>
+                                setInvestment(Number.parseInt(e.toString()))
+                              }
+                              renderTrack={({ props, children }) => (
+                                <div
+                                  {...props}
+                                  className="h-2 w-full rounded-full"
+                                  style={{
+                                    background: `linear-gradient(to right, #159D2C  ${percentage}%, rgba(21, 157, 44, 0.2) ${percentage}%)`,
+                                    height: "4px",
+                                  }}
+                                >
+                                  {children}
+                                </div>
+                              )}
+                              renderThumb={({ props }) => (
+                                <div
+                                  {...props}
+                                  className="h-5 w-5 rounded-full border-5 border-green-500"
+                                  style={{
+                                    touchAction: "pan-y",
+                                    top: "-9px",
+                                    border: "4px solid #159D2C",
+                                    cursor: "pointer",
+                                    background: "#020b1e !important",
+                                  }}
+                                />
+                              )}
                             />
                           </div>
                         </div>
@@ -364,7 +423,7 @@ export default function Home() {
                             />
                           </div>
                           <div className="pb-2 w-full amount-rangelider">
-                            <input
+                            {/* <input
                               id="returnslider"
                               className="rangeslider"
                               type="range"
@@ -375,6 +434,40 @@ export default function Home() {
                               onChange={(e) =>
                                 setRate(Number.parseFloat(e.target.value))
                               }
+                            /> */}
+                            <Range
+                              step={STEP_RATE}
+                              min={MIN_RATE}
+                              max={MAX_RATE}
+                              values={[rate]}
+                              onChange={(e) =>
+                                setRate(Number.parseFloat(e.toString()))
+                              }
+                              renderTrack={({ props, children }) => (
+                                <div
+                                  {...props}
+                                  className="h-2 w-full rounded-full"
+                                  style={{
+                                    background: `linear-gradient(to right, #159D2C  ${ratePercentage}%, rgba(21, 157, 44, 0.2) ${ratePercentage}%)`,
+                                    height: "4px",
+                                  }}
+                                >
+                                  {children}
+                                </div>
+                              )}
+                              renderThumb={({ props }) => (
+                                <div
+                                  {...props}
+                                  className="h-5 w-5 rounded-full border-5 border-green-500"
+                                  style={{
+                                    touchAction: "pan-y",
+                                    top: "-9px",
+                                    border: "4px solid #159D2C",
+                                    cursor: "pointer",
+                                    background: "#020b1e !important",
+                                  }}
+                                />
+                              )}
                             />
                           </div>
                         </div>
@@ -396,7 +489,7 @@ export default function Home() {
                             />
                           </div>
                           <div className="pb-2 w-full amount-rangelider">
-                            <input
+                            {/* <input
                               id="yearslider"
                               className="rangeslider"
                               type="range"
@@ -407,6 +500,40 @@ export default function Home() {
                               onChange={(e) =>
                                 setYears(Number.parseInt(e.target.value))
                               }
+                            /> */}
+                            <Range
+                              step={STEP_YEAR}
+                              min={MIN_YEAR}
+                              max={MAX_YEAR}
+                              values={[years]}
+                              onChange={(e) =>
+                                setYears(Number.parseInt(e.toString()))
+                              }
+                              renderTrack={({ props, children }) => (
+                                <div
+                                  {...props}
+                                  className="h-2 w-full rounded-full"
+                                  style={{
+                                    background: `linear-gradient(to right, #159D2C  ${yearPercentage}%, rgba(21, 157, 44, 0.2) ${yearPercentage}%)`,
+                                    height: "4px",
+                                  }}
+                                >
+                                  {children}
+                                </div>
+                              )}
+                              renderThumb={({ props }) => (
+                                <div
+                                  {...props}
+                                  className="h-5 w-5 rounded-full border-5 border-green-500"
+                                  style={{
+                                    touchAction: "pan-y",
+                                    top: "-9px",
+                                    border: "4px solid #159D2C",
+                                    cursor: "pointer",
+                                    background: "#020b1e !important",
+                                  }}
+                                />
+                              )}
                             />
                           </div>
                         </div>
