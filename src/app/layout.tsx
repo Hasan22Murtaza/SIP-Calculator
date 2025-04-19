@@ -4,12 +4,21 @@ import "./globals.css";
 import { useEffect, useRef, useState } from "react";
 import { ThemeProvider, useTheme } from "@/context/ThemeContext";
 import { Range } from "react-range";
+import { Raleway } from 'next/font/google'
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  const raleway = Raleway({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    variable: '--font-raleway',
+    display: 'swap',
+  });
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentTheme, setCurrentTheme] = useState("Light");
   const [bgCss, setBgCss] = useState("");
@@ -721,14 +730,11 @@ export default function RootLayout({
               {/* header section start */}
               <div className="relative pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
                 <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
-                  <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]">
-                    {/* {" "}
-                    The Most Accurate SIP Calculator To
-                    <span className="text-dark-green">
-                      {" "}
-                      Get Rich SIP by SIP{" "}
-                    </span>{" "} */}
-                    TEST
+                  <h1
+                    className="font-raleway text-center font-bold leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white lg:max-w-[700px] mx-auto"
+                  >
+                    The Most Accurate SIP Calculator To{' '}
+                    <span className="text-dark-green">Get Rich SIP by SIP</span>
                   </h1>
                 </div>
               </div>
