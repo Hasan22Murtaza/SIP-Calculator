@@ -1758,10 +1758,10 @@ export default function RootLayout({
             {/* footer section end  */}
           </div>
           {/* js links  */}
-          <script
+          {/* <script
             type="text/javascript"
             src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
-          ></script>
+          ></script> */}
           <script src="https://cdn.jsdelivr.net/npm/rangeslider.js/dist/rangeslider.min.js"></script>
         </body>
       </html>
