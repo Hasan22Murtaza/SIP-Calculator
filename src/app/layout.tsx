@@ -721,7 +721,7 @@ export default function RootLayout({
               {/* header section start */}
               <div className="relative pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
                 <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
-                  <h1 className="text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]">
+                  <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]">
                     {" "}
                     The Most Accurate SIP Calculator To
                     <span className="text-dark-green">
