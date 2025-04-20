@@ -260,7 +260,7 @@ export default function RootLayout({
   };
 
   const updateRangeCss = () => {
-    alert();
+    // alert();
   };
 
   useEffect(() => {
