@@ -868,7 +868,7 @@ export default function RootLayout({
                                   </label>
                                   <input
                                     type="text"
-                                    className="rounded-xl bg-[rgba(21,157,44,0.05)] border border-[rgba(21,157,44,0.20)] py-2.5 px-4 text-base font-medium text-dark-green text-right transition-all duration-500 hover:border-[#159D2C] focus:border-[#159D2C] focus:text-[#159D2C] outline-none md:max-w-max max-w-[115px]"
+                                    className="rounded-xl bg-[rgba(21,157,44,0.05)] border border-[rgba(21,157,44,0.20)] py-2.5 px-4 text-base font-medium text-my-black text-right transition-all duration-500 hover:border-[#159D2C] focus:border-[#159D2C] focus:text-[#159D2C] outline-none dark:text-white md:max-w-max max-w-[115px]"
                                     value={`${rate}%`}
                                     onChange={(e) => {
                                       const value = Number.parseFloat(
@@ -1130,7 +1130,7 @@ export default function RootLayout({
                                   </label>
                                   <input
                                     type="text"
-                                    className="rounded-xl bg-[rgba(21,157,44,0.05)] border border-[rgba(21,157,44,0.20)] py-2.5 px-4 text-base font-medium text-dark-green text-right transition-all duration-500 hover:border-[#159D2C] focus:border-[#159D2C] focus:text-[#159D2C] outline-none md:max-w-max max-w-[115px]"
+                                    className="rounded-xl bg-[rgba(21,157,44,0.05)] border border-[rgba(21,157,44,0.20)] py-2.5 px-4 text-base font-medium text-my-black text-right transition-all duration-500 hover:border-[#159D2C] focus:border-[#159D2C] focus:text-[#159D2C] outline-none dark:text-white md:max-w-max max-w-[115px]"
                                     value={`${lumpSumRate}%`}
                                     onChange={(e) => {
                                       const value = Number.parseFloat(
