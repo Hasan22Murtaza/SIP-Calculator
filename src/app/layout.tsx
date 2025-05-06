@@ -4,6 +4,7 @@ import "./globals.css";
 import { useEffect, useRef, useState } from "react";
 import { ThemeProvider, useTheme } from "@/context/ThemeContext";
 import { Range } from "react-range";
+import HomePage from "./contents/home";
 
 export default function RootLayout({
   children,
@@ -1363,7 +1364,7 @@ export default function RootLayout({
               {/*calculator section end*/}
 
               {/*detail section start*/}
-              <div className="relative lg:py-[50px] lg:pb-0 py-8">
+              {/* <div className="relative lg:py-[50px] lg:pb-0 py-8">
                 <div className="max-w-6xl mx-auto px-3">
                   <div className="relative">
                     <div className="flex flex-col gap-3 mb-8">
@@ -1479,6 +1480,12 @@ export default function RootLayout({
                       </div>
                     </div>
                   </div>
+                </div>
+              </div> */}
+
+              <div className="relative lg:py-[50px] lg:pb-0 py-8">
+                <div className="max-w-6xl mx-auto px-3">
+                  <HomePage />
                 </div>
               </div>
               {/*detail section end*/}
