@@ -694,91 +694,308 @@ export default function HomePage() {
                     <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-10 pb-3 text-center">
                         Best mutual funds to start SIP
                     </h2>
-                    <figure className="wp-block-table is-style-stripes has-medium-font-size">
-                        <table className="p-4" style={{ border: '1px solid #e5e7eb' }}>
-                            <thead style={{ border: '1px solid #e5e7eb' }}>
-                                <tr style={{ border: '1px solid #e5e7eb' }}>
-                                    <th>Fund Name</th>
-                                    <th>5-Year CAGR (%)</th>
-                                    <th>10-Year CAGR (%)</th>
-                                    <th>Risk Level</th>
-                                    <th>Suitability</th>
+                    {/* <table className="table-auto p-4">
+                        <thead>
+                            <tr>
+                                <th>Fund Name</th>
+                                <th>5-Year CAGR (%)</th>
+                                <th>10-Year CAGR (%)</th>
+                                <th>Risk Level</th>
+                                <th>Suitability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Quant Small Cap Fund – Direct Plan (Growth)</td>
+                                <td>43.5</td>
+                                <td>22.8</td>
+                                <td>Very High</td>
+                                <td>Aggressive investors with 7-10 year horizon</td>
+                            </tr>
+                            <tr>
+                                <td>Parag Parikh Flexi Cap Fund – Direct Plan (Growth)</td>
+                                <td>29.0</td>
+                                <td>19.5</td>
+                                <td>Moderately High</td>
+                                <td>Investors seeking diversified exposure</td>
+                            </tr>
+                            <tr>
+                                <td>ICICI Prudential Value Discovery Fund – Direct Plan (Growth)</td>
+                                <td>30.2</td>
+                                <td>18.0</td>
+                                <td>Moderately High</td>
+                                <td>Investors seeking value stocks</td>
+                            </tr>
+                            <tr>
+                                <td>Nippon India Small Cap Fund – Direct Plan (Growth)</td>
+                                <td>34.7</td>
+                                <td>24.5</td>
+                                <td>Very High</td>
+                                <td>High-risk investors with 10+ year horizon</td>
+                            </tr>
+                            <tr>
+                                <td>HDFC Flexi Cap Fund – Direct Plan (Growth)</td>
+                                <td>31.87</td>
+                                <td>18.2</td>
+                                <td>Moderately High</td>
+                                <td>Investors seeking flexibility and balanced risk-return</td>
+                            </tr>
+                            <tr>
+                                <td>Axis Small Cap Fund – Direct Plan (Growth)</td>
+                                <td>31.2</td>
+                                <td>22.0</td>
+                                <td>Very High</td>
+                                <td>Investors seeking small-cap exposure with lower volatility</td>
+                            </tr>
+                            <tr>
+                                <td>ICICI Prudential Bluechip Fund – Direct Plan (Growth)</td>
+                                <td>24.9</td>
+                                <td>15.8</td>
+                                <td>Moderate</td>
+                                <td>Risk-averse investors seeking stability</td>
+                            </tr>
+                            <tr>
+                                <td>Canara Robeco Small Cap Fund – Direct Plan (Growth)</td>
+                                <td>33.8</td>
+                                <td>24.0 (7-Year)</td>
+                                <td>Very High</td>
+                                <td>Aggressive investors with long-term horizon</td>
+                            </tr>
+                            <tr>
+                                <td>Mirae Asset Large &amp; Midcap Fund – Direct Plan (Growth)</td>
+                                <td>27.5</td>
+                                <td>20.2</td>
+                                <td>Moderately High</td>
+                                <td>Investors seeking stability and growth</td>
+                            </tr>
+                            <tr>
+                                <td>SBI Small Cap Fund – Direct Plan (Growth)</td>
+                                <td>30.5</td>
+                                <td>23.5</td>
+                                <td>Very High</td>
+                                <td>High-risk investors aiming for capital appreciation</td>
+                            </tr>
+                        </tbody>
+                    </table> */}
+
+                    <div className="overflow-x-auto">
+                        <table className="w-full border-collapse">
+                            <thead className="bg-gray-500 dark:bg-gray-900">
+                                <tr>
+                                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                        Fund Name
+                                    </th>
+                                    <th className="px-6 py-3 text-right text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                        5-Year CAGR (%)
+                                    </th>
+                                    <th className="px-6 py-3 text-right text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                        10-Year CAGR (%)
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                        Risk Level
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                        Suitability
+                                    </th>
                                 </tr>
                             </thead>
-                            <tbody style={{ border: '1px solid #e5e7eb' }}>
-                                <tr>
-                                    <td>Quant Small Cap Fund – Direct Plan (Growth)</td>
-                                    <td>43.5</td>
-                                    <td>22.8</td>
-                                    <td>Very High</td>
-                                    <td>Aggressive investors with 7-10 year horizon</td>
+                            <tbody className="divide-y divide-gray-800 dark:divide-gray-800">
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        Quant Small Cap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        43.5
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        22.8
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                            Very High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Aggressive investors with 7-10 year horizon
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>Parag Parikh Flexi Cap Fund – Direct Plan (Growth)</td>
-                                    <td>29.0</td>
-                                    <td>19.5</td>
-                                    <td>Moderately High</td>
-                                    <td>Investors seeking diversified exposure</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        Parag Parikh Flexi Cap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        29.0
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        19.5
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                            Moderately High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Investors seeking diversified exposure
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>ICICI Prudential Value Discovery Fund – Direct Plan (Growth)</td>
-                                    <td>30.2</td>
-                                    <td>18.0</td>
-                                    <td>Moderately High</td>
-                                    <td>Investors seeking value stocks</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        ICICI Prudential Value Discovery Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        30.2
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        18.0
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                            Moderately High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Investors seeking value stocks
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>Nippon India Small Cap Fund – Direct Plan (Growth)</td>
-                                    <td>34.7</td>
-                                    <td>24.5</td>
-                                    <td>Very High</td>
-                                    <td>High-risk investors with 10+ year horizon</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        Nippon India Small Cap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        34.7
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        24.5
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                            Very High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        High-risk investors with 10+ year horizon
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>HDFC Flexi Cap Fund – Direct Plan (Growth)</td>
-                                    <td>31.87</td>
-                                    <td>18.2</td>
-                                    <td>Moderately High</td>
-                                    <td>Investors seeking flexibility and balanced risk-return</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        HDFC Flexi Cap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        31.87
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        18.2
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                            Moderately High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Investors seeking flexibility and balanced risk-return
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>Axis Small Cap Fund – Direct Plan (Growth)</td>
-                                    <td>31.2</td>
-                                    <td>22.0</td>
-                                    <td>Very High</td>
-                                    <td>Investors seeking small-cap exposure with lower volatility</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        Axis Small Cap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        31.2
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        22.0
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                            Very High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Investors seeking small-cap exposure with lower volatility
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>ICICI Prudential Bluechip Fund – Direct Plan (Growth)</td>
-                                    <td>24.9</td>
-                                    <td>15.8</td>
-                                    <td>Moderate</td>
-                                    <td>Risk-averse investors seeking stability</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        ICICI Prudential Bluechip Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        24.9
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        15.8
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">
+                                            Moderate
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Risk-averse investors seeking stability
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>Canara Robeco Small Cap Fund – Direct Plan (Growth)</td>
-                                    <td>33.8</td>
-                                    <td>24.0 (7-Year)</td>
-                                    <td>Very High</td>
-                                    <td>Aggressive investors with long-term horizon</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        Canara Robeco Small Cap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        33.8
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        24.0 (7-Year)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                            Very High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Aggressive investors with long-term horizon
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>Mirae Asset Large &amp; Midcap Fund – Direct Plan (Growth)</td>
-                                    <td>27.5</td>
-                                    <td>20.2</td>
-                                    <td>Moderately High</td>
-                                    <td>Investors seeking stability and growth</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        Mirae Asset Large & Midcap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        27.5
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        20.2
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                            Moderately High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        Investors seeking stability and growth
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>SBI Small Cap Fund – Direct Plan (Growth)</td>
-                                    <td>30.5</td>
-                                    <td>23.5</td>
-                                    <td>Very High</td>
-                                    <td>High-risk investors aiming for capital appreciation</td>
+                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        SBI Small Cap Fund – Direct Plan (Growth)
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        30.5
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                        23.5
+                                    </td>
+                                    <td className="px-6 py-4 text-sm">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                            Very High
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                        High-risk investors aiming for capital appreciation
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </figure>
+                    </div>
+
+                    {/* <figure className="wp-block-table is-style-stripes has-medium-font-size">
+                    </figure> */}
                     <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-6">SIP Calculator FAQs</h2>
                     <div id="rank-math-faq" className="rank-math-block">
                         <div className="rank-math-list ">
@@ -951,17 +1168,17 @@ export default function HomePage() {
                     </p>
 
                     <ul className="flex flex-col gap-2 list-disc pl-5">
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
+                        <li className="text-dark-green">
                             <a href="#">Axis Bank SIP Calculator</a>
                         </li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">HDFC SIP Calculator</a></li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">ICICI SIP Calculator</a></li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">IDBI SIP Calculator</a></li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">Kotak Bank SIP Calculator</a></li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">LIC SIP Calculator</a></li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">Nippon India SIP Calculator</a></li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">PNB SIP Calculator</a></li>
-                        <li className="text-base text-[#434B5B] dark:text-[#7B8498]"><a href="#">SBI SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">HDFC SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">ICICI SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">IDBI SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">Kotak Bank SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">LIC SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">Nippon India SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">PNB SIP Calculator</a></li>
+                        <li className="text-dark-green"><a href="#">SBI SIP Calculator</a></li>
                     </ul>
                 </div>
             </div>
