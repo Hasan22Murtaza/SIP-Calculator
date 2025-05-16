@@ -1,5 +1,6 @@
 import RootLayout from "@/app/layout";
 import { LayoutRouter } from "next/dist/server/app-render/entry-base";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Disclaimer() {
@@ -103,7 +104,7 @@ export default function Disclaimer() {
                       <hr className="wp-block-separator has-alpha-channel-opacity mb-5" />
                       <h3 className="lg:text-2xl text-xl text-my-black font-semibold dark:text-white">
                         <span id="Accuracy_of_Information">
-                         Accuracy of Information
+                          Accuracy of Information
                         </span>
                       </h3>
                       <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498] pt-5">
@@ -272,31 +273,49 @@ export default function Disclaimer() {
                     </h2>{" "}
                     <ul className="flex flex-col gap-2 list-disc pl-5 p-5">
                       <li className="text-dark-green">
-                        <a href="#">Axis Bank SIP Calculator</a>
+                        <Link href="/axis" className="text-dark-green">
+                          Axis Bank SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">HDFC SIP Calculator</a>
+                        <Link href="/hdfc" className="text-dark-green">
+                          HDFC SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">ICICI SIP Calculator</a>
+                        <Link href="/icici" className="text-dark-green">
+                          ICICI SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">IDBI SIP Calculator</a>
+                        <Link href="/idbi" className="text-dark-green">
+                          IDBI SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">Kotak Bank SIP Calculator</a>
+                        <Link href="/kotak" className="text-dark-green">
+                          Kotak Bank SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">LIC SIP Calculator</a>
+                        <Link href="/lic" className="text-dark-green">
+                          LIC SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">Nippon India SIP Calculator</a>
+                        <Link href="/nippon" className="text-dark-green">
+                          Nippon India SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">PNB SIP Calculator</a>
+                        <Link href="/pnb" className="text-dark-green">
+                          PNB SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">SBI SIP Calculator</a>
+                        <Link href="/sbi" className="text-dark-green">
+                          SBI SIP Calculator
+                        </Link>
                       </li>
                     </ul>
                   </div>

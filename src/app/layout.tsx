@@ -424,10 +424,7 @@ export default function RootLayout({
                       </div>
                     )}
                   </button>
-                  <a
-                    href="#"
-                    className="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap "
-                  >
+                  <Link href="/" className="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap">
                     <svg
                       className="lg:max-w-max max-w-[140px]  "
                       width={217}
@@ -481,16 +478,21 @@ export default function RootLayout({
                         fill="#159D2C"
                       />
                     </svg>
-                  </a>
+                  </Link>
+                  {/* <a
+                    href="#"
+                    className="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap"
+                  >
+                    
+                  </a> */}
                   {/* <ul
                     id="toggle-menu"
                     className="main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 -translate-y-[200%] lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c]  lg:rounded-none rounded-2xl"
                   > */}
                   <ul
                     id="toggle-menu"
-                    className={`main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 ${
-                      menuOpen ? "translate-y-0" : "-translate-y-[200%]"
-                    } lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c] lg:rounded-none rounded-2xl`}
+                    className={`main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 ${menuOpen ? "translate-y-0" : "-translate-y-[200%]"
+                      } lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c] lg:rounded-none rounded-2xl`}
                   >
                     <div className="flex lg:hidden items-center justify-between p-5 border-b border-[#DCD7D7] dark:border-[#263c6b]">
                       <span className="text-sm font-medium text-[#020B1E] dark:text-white">
@@ -594,9 +596,9 @@ export default function RootLayout({
                       </label>
                     </div>
                     <li className="lg:px-0 px-5">
-                      <a href="#" className="nav_link ">
+                      <Link href="/" className="nav_link">
                         SIP Calculator
-                      </a>
+                      </Link>
                     </li>
                     <li className="lg:px-0 px-5">
                       <a href="#" className="nav_link ">
@@ -751,11 +753,10 @@ export default function RootLayout({
                               className="tabs flex items-center justify-center w-full border-b-2 border-[#DCD7D7] dark:border-[#263c6b]"
                             >
                               <li
-                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-center dark:text-white text-my-black -mb-px border-b-2 ${
-                                  activeTab === "sip"
-                                    ? "border-[#159D2C] text-[#159D2C] active"
-                                    : "border-transparent"
-                                }`}
+                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-center dark:text-white text-my-black -mb-px border-b-2 ${activeTab === "sip"
+                                  ? "border-[#159D2C] text-[#159D2C] active"
+                                  : "border-transparent"
+                                  }`}
                                 onClick={() => switchTab("sip")}
                               >
                                 <a
@@ -767,11 +768,10 @@ export default function RootLayout({
                                 </a>
                               </li>
                               <li
-                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-my-black dark:text-white text-center border-b-2 ${
-                                  activeTab === "lumpsum"
-                                    ? "border-[#159D2C] text-[#159D2C] active"
-                                    : "border-transparent"
-                                }`}
+                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-my-black dark:text-white text-center border-b-2 ${activeTab === "lumpsum"
+                                  ? "border-[#159D2C] text-[#159D2C] active"
+                                  : "border-transparent"
+                                  }`}
                                 onClick={() => switchTab("lumpsum")}
                               >
                                 <a
@@ -1641,20 +1641,12 @@ export default function RootLayout({
                         </Link>
                       </li>
                       <li className="mb-5">
-                        <a
-                          href="javascript:;"
-                          className=" text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
+                        <Link
+                          href="/scholarship"
+                          className="text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
                         >
-                          Addresses
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="javascript:;"
-                          className=" text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
-                        >
-                          Account Details
-                        </a>
+                          Scholarship
+                        </Link>
                       </li>
                     </ul>
                   </div>

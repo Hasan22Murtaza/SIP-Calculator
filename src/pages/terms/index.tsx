@@ -1,4 +1,5 @@
 import RootLayout from "@/app/layout";
+import Link from "next/link";
 
 import { useEffect, useState } from "react";
 
@@ -66,7 +67,7 @@ export default function Terms() {
                           acceptance of the updated Terms.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="1_Use_of_the_Website">
                             1. Use of the Website
                           </span>
@@ -98,7 +99,7 @@ export default function Terms() {
                           are violating these Terms.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="2_Intellectual_Property_Rights">
                             2. Intellectual Property Rights
                           </span>
@@ -120,7 +121,7 @@ export default function Terms() {
                           from us.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="3_Disclaimer">
                             3. Disclaimer
                           </span>
@@ -156,7 +157,7 @@ export default function Terms() {
                           <strong>Use the Website at your own risk.</strong>
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="4_Limitation_of_Liability">
                             4. Limitation of Liability
                           </span>
@@ -165,23 +166,23 @@ export default function Terms() {
                           To the fullest extent permitted by applicable law:
                         </p>
                         <ul className="wp-block-list flex flex-col gap-2 list-disc pl-5 mb-5">
-                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]"> 
+                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
                             We shall not be liable for any indirect, incidental,
                             special, consequential, or punitive damages.
                           </li>
-                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]"> 
+                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
                             We shall not be responsible for any loss of profits,
                             revenue, data, or use incurred by you or any third
                             party.
                           </li>
-                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]"> 
+                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
                             We are not responsible for damages arising from your
                             use or inability to use the Website or reliance on
                             any information provided on the Website.
                           </li>
                         </ul>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="5_Third-Party_Links">
                             5. Third-Party Links
                           </span>
@@ -199,7 +200,7 @@ export default function Terms() {
                           risk.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="6_Google_AdSense_and_Advertising">
                             6. Google AdSense and Advertising
                           </span>
@@ -232,7 +233,7 @@ export default function Terms() {
                           <a>Privacy Policy</a>.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="7_No_Financial_Advice">
                             7. No Financial Advice
                           </span>
@@ -252,7 +253,7 @@ export default function Terms() {
                           provided through the Website.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="8_Indemnification">
                             8. Indemnification
                           </span>
@@ -270,7 +271,7 @@ export default function Terms() {
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">Your violation of any rights of another</li>
                         </ul>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="9_Governing_Law">
                             9. Governing Law
                           </span>
@@ -285,7 +286,7 @@ export default function Terms() {
                           courts of Rajkot, Gujarat, India.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                    <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="10_Contact_Us">
                             10. Contact Us
                           </span>
@@ -405,31 +406,49 @@ export default function Terms() {
                     </h2>{" "}
                     <ul className="flex flex-col gap-2 list-disc pl-5 p-5">
                       <li className="text-dark-green">
-                        <a href="#">Axis Bank SIP Calculator</a>
+                        <Link href="/axis" className="text-dark-green">
+                          Axis Bank SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">HDFC SIP Calculator</a>
+                        <Link href="/hdfc" className="text-dark-green">
+                          HDFC SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">ICICI SIP Calculator</a>
+                        <Link href="/icici" className="text-dark-green">
+                          ICICI SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">IDBI SIP Calculator</a>
+                        <Link href="/idbi" className="text-dark-green">
+                          IDBI SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">Kotak Bank SIP Calculator</a>
+                        <Link href="/kotak" className="text-dark-green">
+                          Kotak Bank SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">LIC SIP Calculator</a>
+                        <Link href="/lic" className="text-dark-green">
+                          LIC SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">Nippon India SIP Calculator</a>
+                        <Link href="/nippon" className="text-dark-green">
+                          Nippon India SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">PNB SIP Calculator</a>
+                        <Link href="/pnb" className="text-dark-green">
+                          PNB SIP Calculator
+                        </Link>
                       </li>
                       <li className="text-dark-green">
-                        <a href="#">SBI SIP Calculator</a>
+                        <Link href="/sbi" className="text-dark-green">
+                          SBI SIP Calculator
+                        </Link>
                       </li>
                     </ul>
                   </div>
