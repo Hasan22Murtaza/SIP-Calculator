@@ -1,7 +1,7 @@
 "use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import "./globals.css";
 import { useEffect, useRef, useState } from "react";
 import { ThemeProvider, useTheme } from "@/context/ThemeContext";
@@ -368,8 +368,8 @@ export default function RootLayout({
             as="style"
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
             onLoad={(e) => {
-              const link = e.target as HTMLLinkElement
-              link.rel = 'stylesheet'
+              const link = e.target as HTMLLinkElement;
+              link.rel = "stylesheet";
             }}
           />
           <noscript>
@@ -488,8 +488,9 @@ export default function RootLayout({
                   > */}
                   <ul
                     id="toggle-menu"
-                    className={`main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 ${menuOpen ? "translate-y-0" : "-translate-y-[200%]"
-                      } lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c] lg:rounded-none rounded-2xl`}
+                    className={`main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 ${
+                      menuOpen ? "translate-y-0" : "-translate-y-[200%]"
+                    } lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c] lg:rounded-none rounded-2xl`}
                   >
                     <div className="flex lg:hidden items-center justify-between p-5 border-b border-[#DCD7D7] dark:border-[#263c6b]">
                       <span className="text-sm font-medium text-[#020B1E] dark:text-white">
@@ -718,8 +719,9 @@ export default function RootLayout({
             </nav>
             {/* navbar end  */}
 
-            {pathname !== "/" ?
-              children :
+            {pathname !== "/" ? (
+              children
+            ) : (
               <main>
                 {/* header section start */}
                 <div className="relative pt-[100px] md:pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
@@ -749,10 +751,11 @@ export default function RootLayout({
                               className="tabs flex items-center justify-center w-full border-b-2 border-[#DCD7D7] dark:border-[#263c6b]"
                             >
                               <li
-                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-center dark:text-white text-my-black -mb-px border-b-2 ${activeTab === "sip"
-                                  ? "border-[#159D2C] text-[#159D2C] active"
-                                  : "border-transparent"
-                                  }`}
+                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-center dark:text-white text-my-black -mb-px border-b-2 ${
+                                  activeTab === "sip"
+                                    ? "border-[#159D2C] text-[#159D2C] active"
+                                    : "border-transparent"
+                                }`}
                                 onClick={() => switchTab("sip")}
                               >
                                 <a
@@ -764,10 +767,11 @@ export default function RootLayout({
                                 </a>
                               </li>
                               <li
-                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-my-black dark:text-white text-center border-b-2 ${activeTab === "lumpsum"
-                                  ? "border-[#159D2C] text-[#159D2C] active"
-                                  : "border-transparent"
-                                  }`}
+                                className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-my-black dark:text-white text-center border-b-2 ${
+                                  activeTab === "lumpsum"
+                                    ? "border-[#159D2C] text-[#159D2C] active"
+                                    : "border-transparent"
+                                }`}
                                 onClick={() => switchTab("lumpsum")}
                               >
                                 <a
@@ -1137,7 +1141,8 @@ export default function RootLayout({
                                         const value = Number.parseFloat(
                                           e.target.value.replace(/[^0-9.]/g, "")
                                         );
-                                        if (!isNaN(value)) setLumpSumRate(value);
+                                        if (!isNaN(value))
+                                          setLumpSumRate(value);
                                       }}
                                       id="lumpSumRateInput"
                                     />
@@ -1212,7 +1217,8 @@ export default function RootLayout({
                                         const value = Number.parseInt(
                                           e.target.value
                                         );
-                                        if (!isNaN(value)) setLumpSumYears(value);
+                                        if (!isNaN(value))
+                                          setLumpSumYears(value);
                                       }}
                                       id="lumpSumYearsInput"
                                     />
@@ -1490,7 +1496,7 @@ export default function RootLayout({
                 </div>
                 {/*detail section end*/}
               </main>
-            }
+            )}
 
             {/* {children} */}
             {/* <ThemeProvider>{children}</ThemeProvider> */}
@@ -1619,20 +1625,20 @@ export default function RootLayout({
                       </li>
 
                       <li className="mb-5">
-                        <a
-                          href="javascript:;"
+                        <Link
+                          href="/privacy"
                           className="text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
                         >
-                          Orders
-                        </a>
+                          Privacy Policy
+                        </Link>
                       </li>
                       <li className="mb-5">
-                        <a
-                          href="javascript:;"
-                          className=" text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
+                        <Link
+                          href="/terms"
+                          className="text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
                         >
-                          Downloads
-                        </a>
+                          Terms of Services
+                        </Link>
                       </li>
                       <li className="mb-5">
                         <a
