@@ -1506,9 +1506,9 @@ export default function RootLayout({
               <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/*Grid*/}
                 <div className="grid grid-cols-2  lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
-                  <div className="col-span-full  lg:col-span-3 ">
-                    <a
-                      href="#"
+                  <div className="col-span-full lg:col-span-3">
+                    <Link
+                      href="/"
                       className="dark:text-white text-black flex justify-center lg:justify-start"
                     >
                       <svg
@@ -1563,14 +1563,12 @@ export default function RootLayout({
                           fill="#159D2C"
                         />
                       </svg>
-                    </a>
+                    </Link>
                     <p className="pt-3 text-base  text-[#434B5B] lg:max-w-md text-center lg:text-left dark:text-[#7B8498] leading-8">
-                      Lorem Ipsum&nbsp;is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s?
+                      The most accurate SIP calculator in the world!
                     </p>
                   </div>
-                  <div className="lg:mx-auto text-left ">
+                  {/* <div className="lg:mx-auto text-left ">
                     <h4 className="text-lg text-black font-medium mb-7 dark:text-white">
                       Products
                     </h4>
@@ -1608,13 +1606,13 @@ export default function RootLayout({
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                   {/*End Col*/}
-                  <div className="lg:mx-auto text-left ">
-                    <h4 className="text-lg text-black font-medium mb-7 dark:text-white">
+                  <div className="col-span-full lg:col-span-3">
+                    {/* <h4 className="text-lg text-black font-medium mb-7 dark:text-white">
                       SIP Calculator
-                    </h4>
-                    <ul className="text-sm transition-all duration-500">
+                    </h4> */}
+                    {/* <ul className="text-sm transition-all duration-500">
                       <li className="mb-5">
                         <Link
                           href="/disclaimer"
@@ -1648,10 +1646,60 @@ export default function RootLayout({
                           Scholarship
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
+                    {
+                      pathname !== "/" &&
+                      <ul className="flex flex-col gap-2 transition-all duration-500">
+                        <li className="text-dark-green">
+                          <Link href="/axis" className="text-dark-green">
+                            Axis Bank SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/hdfc" className="text-dark-green">
+                            HDFC SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/icici" className="text-dark-green">
+                            ICICI SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/idbi" className="text-dark-green">
+                            IDBI SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/kotak" className="text-dark-green">
+                            Kotak Bank SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/lic" className="text-dark-green">
+                            LIC SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/nippon" className="text-dark-green">
+                            Nippon India SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/pnb" className="text-dark-green">
+                            PNB SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/sbi" className="text-dark-green">
+                            SBI SIP Calculator
+                          </Link>
+                        </li>
+                      </ul>
+                    }
                   </div>
                   {/*End Col*/}
-                  <div className="lg:mx-auto text-left ">
+                  {/* <div className="lg:mx-auto text-left ">
                     <h4 className="text-lg text-black font-medium mb-7 dark:text-white">
                       Quick Links
                     </h4>
@@ -1689,16 +1737,16 @@ export default function RootLayout({
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
                 {/*Grid*/}
                 <div className="py-5 border-t border-[#DCD7D7] dark:border-[#263c6b]">
                   <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
                     <span className="text-sm text-[#434B5B] dark:text-[#7B8498]">
-                      © 2024-2025 sip calculator. All rights reserved.
+                      © {new Date().getFullYear()} SIP Calculator. All rights reserved.
                     </span>
                     <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
-                      <a
+                      {/* <a
                         href="javascript:;"
                         className="group w-8 h-8 rounded-full bg-[#F4F4F4] dark:bg-[#08193c] flex justify-center items-center hover:bg-dark-green dark:hover:bg-dark-green hover:text-white transition-all duration-500"
                       >
@@ -1767,7 +1815,41 @@ export default function RootLayout({
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
+                      </a> */}
+
+                      <Link
+                        href="/disclaimer"
+                        className="text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green me-0"
+                      >
+                        Disclaimer
+                      </Link>
+                      <span className="text-[#434B5B] dark:text-[#7B8498]">
+                        -
+                      </span>
+                      <Link
+                        href="/privacy"
+                        className="text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
+                      >
+                        Privacy Policy
+                      </Link>
+                      <span className="text-[#434B5B] dark:text-[#7B8498]">
+                        -
+                      </span>
+                      <Link
+                        href="/terms"
+                        className="text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
+                      >
+                        Terms of Services
+                      </Link>
+                      <span className="text-[#434B5B] dark:text-[#7B8498]">
+                        -
+                      </span>
+                      <Link
+                        href="/scholarship"
+                        className="text-[#434B5B] dark:text-[#7B8498] transition-all duration-500 hover:text-dark-green dark:hover:text-dark-green"
+                      >
+                        Scholarship
+                      </Link>
                     </div>
                   </div>
                 </div>
