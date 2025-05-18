@@ -385,6 +385,7 @@ export default function RootLayout({
           /> */}
           {/* <link rel="stylesheet" href="assets/css/apexcharts.min.css" /> */}
           <link rel="stylesheet" href="assets/css/style.css" />
+          <link rel="icon" type="image/svg+xml" href="favicon.svg" />
         </head>
         <body>
           <div className="bg-[#F4F4F4] dark:bg-[#08193c]">
@@ -478,7 +479,7 @@ export default function RootLayout({
                         fill="#159D2C"
                       />
                     </svg> */}
-                    <img src="https://allsipcalculator.in/wp-content/uploads/2024/10/SIP.svg" alt="logo" />
+                    <img src="assets/images/sip-text.svg" alt="logo" />
                   </Link>
                   {/* <a
                     href="#"
@@ -1506,7 +1507,7 @@ export default function RootLayout({
             <footer className="w-full bg-white dark:bg-my-black border-t border-[#DCD7D7] dark:border-[#263c6b]">
               <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/*Grid*/}
-                <div className="grid grid-cols-2  lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
+                <div className="grid grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8 ">
                   <div className="col-span-full lg:col-span-3">
                     <Link
                       href="/"
@@ -1564,7 +1565,7 @@ export default function RootLayout({
                           fill="#159D2C"
                         />
                       </svg> */}
-                      <img src="https://allsipcalculator.in/wp-content/uploads/2024/10/SIP.svg" alt="logo" />
+                      <img src="assets/images/sip-text.svg" alt="logo" />
                     </Link>
                     <p className="pt-3 text-base  text-[#434B5B] lg:max-w-md text-center lg:text-left dark:text-[#7B8498] leading-8">
                       The most accurate SIP calculator in the world!
@@ -1611,6 +1612,59 @@ export default function RootLayout({
                   </div> */}
                   {/*End Col*/}
                   <div className="col-span-full lg:col-span-3">
+                    <div className="grid grid-cols-2">
+
+                      <ul className="flex flex-col gap-4 transition-all duration-500">
+                        <li className="text-dark-green">
+                          <Link href="/axis" className="text-dark-green">
+                            Axis Bank SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/hdfc" className="text-dark-green">
+                            HDFC SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/icici" className="text-dark-green">
+                            ICICI SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/idbi" className="text-dark-green">
+                            IDBI SIP Calculator
+                          </Link>
+                        </li>
+                      </ul>
+
+                      <ul className="flex flex-col gap-4 transition-all duration-500" style={{ marginLeft: "40px" }}>
+                        <li className="text-dark-green">
+                          <Link href="/kotak" className="text-dark-green">
+                            Kotak Bank SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/lic" className="text-dark-green">
+                            LIC SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/nippon" className="text-dark-green">
+                            Nippon India SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/pnb" className="text-dark-green">
+                            PNB SIP Calculator
+                          </Link>
+                        </li>
+                        <li className="text-dark-green">
+                          <Link href="/sbi" className="text-dark-green">
+                            SBI SIP Calculator
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                     {/* <h4 className="text-lg text-black font-medium mb-7 dark:text-white">
                       SIP Calculator
                     </h4> */}
@@ -1649,56 +1703,7 @@ export default function RootLayout({
                         </Link>
                       </li>
                     </ul> */}
-                    {
-                      pathname !== "/" &&
-                      <ul className="flex flex-col gap-3 transition-all duration-500">
-                        <li className="text-dark-green">
-                          <Link href="/axis" className="text-dark-green">
-                            Axis Bank SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/hdfc" className="text-dark-green">
-                            HDFC SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/icici" className="text-dark-green">
-                            ICICI SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/idbi" className="text-dark-green">
-                            IDBI SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/kotak" className="text-dark-green">
-                            Kotak Bank SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/lic" className="text-dark-green">
-                            LIC SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/nippon" className="text-dark-green">
-                            Nippon India SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/pnb" className="text-dark-green">
-                            PNB SIP Calculator
-                          </Link>
-                        </li>
-                        <li className="text-dark-green">
-                          <Link href="/sbi" className="text-dark-green">
-                            SBI SIP Calculator
-                          </Link>
-                        </li>
-                      </ul>
-                    }
+
                   </div>
                   {/*End Col*/}
                   {/* <div className="lg:mx-auto text-left ">
