@@ -425,7 +425,7 @@ export default function RootLayout({
                     )}
                   </button>
                   <Link href="/" className="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap">
-                    <svg
+                    {/* <svg
                       className="lg:max-w-max max-w-[140px]  "
                       width={217}
                       height={50}
@@ -477,7 +477,8 @@ export default function RootLayout({
                         d="M18.2411 33.4979H16.8826V32.6001C16.8826 32.266 17.1496 31.995 17.4788 31.995H17.6446C17.9741 31.995 18.2411 32.266 18.2411 32.6001V33.4979ZM18.2411 35.2282H16.8826V33.8498H18.2411V35.2282ZM16.5358 35.2282H15.1776V33.8498H16.5358V35.2282ZM15.1583 32.6197C15.1583 32.2857 15.4253 32.0147 15.7545 32.0147H15.9202C16.2497 32.0147 16.5167 32.2857 16.5167 32.6197V33.5176H15.1583V32.6197ZM14.5039 28.4227L14.508 38.4109C14.5097 38.4162 16.743 38.3953 16.743 38.3953L18.7271 36.5004V25.2271L14.5039 28.4227Z"
                         fill="#159D2C"
                       />
-                    </svg>
+                    </svg> */}
+                    <img src="https://allsipcalculator.in/wp-content/uploads/2024/10/SIP.svg" alt="logo" />
                   </Link>
                   {/* <a
                     href="#"
@@ -1511,7 +1512,7 @@ export default function RootLayout({
                       href="/"
                       className="dark:text-white text-black flex justify-center lg:justify-start"
                     >
-                      <svg
+                      {/* <svg
                         width={217}
                         height={50}
                         viewBox="0 0 217 50"
@@ -1562,7 +1563,8 @@ export default function RootLayout({
                           d="M18.2411 33.4979H16.8826V32.6001C16.8826 32.266 17.1496 31.995 17.4788 31.995H17.6446C17.9741 31.995 18.2411 32.266 18.2411 32.6001V33.4979ZM18.2411 35.2282H16.8826V33.8498H18.2411V35.2282ZM16.5358 35.2282H15.1776V33.8498H16.5358V35.2282ZM15.1583 32.6197C15.1583 32.2857 15.4253 32.0147 15.7545 32.0147H15.9202C16.2497 32.0147 16.5167 32.2857 16.5167 32.6197V33.5176H15.1583V32.6197ZM14.5039 28.4227L14.508 38.4109C14.5097 38.4162 16.743 38.3953 16.743 38.3953L18.7271 36.5004V25.2271L14.5039 28.4227Z"
                           fill="#159D2C"
                         />
-                      </svg>
+                      </svg> */}
+                      <img src="https://allsipcalculator.in/wp-content/uploads/2024/10/SIP.svg" alt="logo" />
                     </Link>
                     <p className="pt-3 text-base  text-[#434B5B] lg:max-w-md text-center lg:text-left dark:text-[#7B8498] leading-8">
                       The most accurate SIP calculator in the world!
@@ -1649,7 +1651,7 @@ export default function RootLayout({
                     </ul> */}
                     {
                       pathname !== "/" &&
-                      <ul className="flex flex-col gap-2 transition-all duration-500">
+                      <ul className="flex flex-col gap-3 transition-all duration-500">
                         <li className="text-dark-green">
                           <Link href="/axis" className="text-dark-green">
                             Axis Bank SIP Calculator
