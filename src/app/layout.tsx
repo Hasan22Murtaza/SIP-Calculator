@@ -425,8 +425,8 @@ export default function RootLayout({
                       </div>
                     )}
                   </button>
-                  <Link href="/" className="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap">
-                    {/* <svg
+                  {/* <Link href="/" className="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap"> */}
+                  {/* <svg
                       className="lg:max-w-max max-w-[140px]  "
                       width={217}
                       height={50}
@@ -479,8 +479,14 @@ export default function RootLayout({
                         fill="#159D2C"
                       />
                     </svg> */}
-                    <img src="assets/images/sip-text.svg" alt="logo" />
+                  {/* <img src="assets/images/sip-light.svg" alt="logo" /> */}
+
+                  {/* </Link> */}
+
+                  <Link href="/" className="me-10">
+                    {currentTheme == "Dark" ? <img src="/assets/images/sip-dark.svg" style={{ height: "50px" }} alt="logo" /> : <img src="/assets/images/sip-light.svg" style={{ height: "50px" }} alt="logo" />}
                   </Link>
+
                   {/* <a
                     href="#"
                     className="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap"
@@ -1514,7 +1520,7 @@ export default function RootLayout({
                   <div className="col-span-full lg:col-span-3">
                     <Link
                       href="/"
-                      className="dark:text-white text-black flex justify-center lg:justify-start"
+                      className=""
                     >
                       {/* <svg
                         width={217}
@@ -1568,7 +1574,8 @@ export default function RootLayout({
                           fill="#159D2C"
                         />
                       </svg> */}
-                      <img src="assets/images/sip-text.svg" alt="logo" />
+                      {/* <img src="assets/images/sip-text.svg" alt="logo" /> */}
+                      {currentTheme == "Dark" ? <img src="/assets/images/sip-dark.svg" style={{ height: "50px" }} alt="logo" /> : <img src="/assets/images/sip-light.svg" style={{ height: "50px" }} alt="logo" />}
                     </Link>
                     <p className="pt-3 text-base  text-[#434B5B] lg:max-w-md text-center lg:text-left dark:text-[#7B8498] leading-8">
                       The most accurate SIP calculator in the world!
