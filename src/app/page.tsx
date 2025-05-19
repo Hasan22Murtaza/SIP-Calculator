@@ -271,7 +271,7 @@ export default function Home() {
         {/* header section start */}
         <div className="relative pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
           <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
-            <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" style={{ marginTop: "40px" }}>
+            <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" >
               {" "}
               The Most Accurate SIP Calculator To
               <span className="text-dark-green">
@@ -297,8 +297,8 @@ export default function Home() {
                     >
                       <li
                         className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-center dark:text-white text-my-black -mb-px border-b-2 ${activeTab === "sip"
-                            ? "border-[#159D2C] text-[#159D2C] active"
-                            : "border-transparent"
+                          ? "border-[#159D2C] text-[#159D2C] active"
+                          : "border-transparent"
                           }`}
                         onClick={() => switchTab("sip")}
                       >
@@ -312,8 +312,8 @@ export default function Home() {
                       </li>
                       <li
                         className={`font-medium py-3 px-4 sm:px-6 lg:p-5 w-1/2 rounded-t text-my-black dark:text-white text-center border-b-2 ${activeTab === "lumpsum"
-                            ? "border-[#159D2C] text-[#159D2C] active"
-                            : "border-transparent"
+                          ? "border-[#159D2C] text-[#159D2C] active"
+                          : "border-transparent"
                           }`}
                         onClick={() => switchTab("lumpsum")}
                       >
