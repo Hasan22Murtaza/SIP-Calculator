@@ -1,6 +1,5 @@
 import RootLayout from "@/app/layout";
 import { LayoutRouter } from "next/dist/server/app-render/entry-base";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Disclaimer() {
@@ -18,7 +17,7 @@ export default function Disclaimer() {
         {/* header section start */}
         <div className="relative pt-[100px] md:pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
           <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
-            <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]">
+            <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" style={{ marginTop: "40px" }}>
               {" "}
               The Most Accurate SIP Calculator To
               <span className="text-dark-green">
@@ -273,49 +272,31 @@ export default function Disclaimer() {
                     </h2>{" "}
                     <ul className="flex flex-col gap-2 list-disc pl-5 p-5">
                       <li className="text-dark-green">
-                        <Link href="/axis" className="text-dark-green">
-                          Axis Bank SIP Calculator
-                        </Link>
+                        <a href="#">Axis Bank SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/hdfc" className="text-dark-green">
-                          HDFC SIP Calculator
-                        </Link>
+                        <a href="#">HDFC SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/icici" className="text-dark-green">
-                          ICICI SIP Calculator
-                        </Link>
+                        <a href="#">ICICI SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/idbi" className="text-dark-green">
-                          IDBI SIP Calculator
-                        </Link>
+                        <a href="#">IDBI SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/kotak" className="text-dark-green">
-                          Kotak Bank SIP Calculator
-                        </Link>
+                        <a href="#">Kotak Bank SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/lic" className="text-dark-green">
-                          LIC SIP Calculator
-                        </Link>
+                        <a href="#">LIC SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/nippon" className="text-dark-green">
-                          Nippon India SIP Calculator
-                        </Link>
+                        <a href="#">Nippon India SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/pnb" className="text-dark-green">
-                          PNB SIP Calculator
-                        </Link>
+                        <a href="#">PNB SIP Calculator</a>
                       </li>
                       <li className="text-dark-green">
-                        <Link href="/sbi" className="text-dark-green">
-                          SBI SIP Calculator
-                        </Link>
+                        <a href="#">SBI SIP Calculator</a>
                       </li>
                     </ul>
                   </div>

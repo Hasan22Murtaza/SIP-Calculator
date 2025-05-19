@@ -598,19 +598,22 @@ export default function RootLayout({
                       </label>
                     </div>
                     <li className="lg:px-0 px-5">
-                      <Link href="/" className="nav_link">
+                      <Link href="/" className="nav_link" style={{ color: pathname == "/" ? "rgb(21 157 44 / var(--tw-text-opacity))" : "" }}>
                         SIP Calculator
                       </Link>
                     </li>
                     <li className="lg:px-0 px-5">
-                      <a href="#" className="nav_link ">
+                      {/* <a href="#" className="nav_link ">
                         SIP Vs Lump Sum
-                      </a>
+                      </a> */}
+                      <Link href="/sip-vs-lumpsum" className="nav_link" style={{ color: pathname == "/sip-vs-lumpsum" ? "rgb(21 157 44 / var(--tw-text-opacity))" : "" }}>
+                        SIP Vs Lump Sum
+                      </Link>
                     </li>
                     <li className="lg:px-0 px-5">
-                      <a href="#" className="nav_link ">
+                      <Link href="/sip-vs-swp" className="nav_link" style={{ color: pathname == "/sip-vs-swp" ? "rgb(21 157 44 / var(--tw-text-opacity))" : "" }}>
                         SIP vs SWP
-                      </a>
+                      </Link>
                     </li>
                     <li className="lg:px-0 px-5">
                       <a href="#" className="nav_link ">
@@ -730,7 +733,7 @@ export default function RootLayout({
                 {/* header section start */}
                 <div className="relative pt-[100px] md:pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
                   <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
-                    <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]">
+                    <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" style={{ marginTop: "40px" }}>
                       {" "}
                       The Most Accurate SIP Calculator To
                       <span className="text-dark-green">

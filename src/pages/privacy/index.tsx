@@ -17,7 +17,7 @@ export default function Privacy() {
       <main>
         <div className="relative pt-[100px] md:pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
           <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
-            <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]">
+            <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" style={{ marginTop: "40px" }}>
               {" "}
               The Most Accurate SIP Calculator To
               <span className="text-dark-green">
@@ -156,9 +156,9 @@ export default function Privacy() {
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
                         <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="Google_AdSense_and_Third-Party_Advertising">
-                            
-                              Google AdSense and Third-Party Advertising
-                          
+
+                            Google AdSense and Third-Party Advertising
+
                           </span>
                         </h2>
                         <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498] pt-5 pb-2">
@@ -208,7 +208,7 @@ export default function Privacy() {
                           help the Website provide a better user experience.
                         </p>
                         <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498] pt-5 pb-3">We use cookies to:</p>
-                       <ul className="wp-block-list flex flex-col gap-2 list-disc pl-5 ">
+                        <ul className="wp-block-list flex flex-col gap-2 list-disc pl-5 ">
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
                             Understand and save users’ preferences for future
                             visits
@@ -233,7 +233,7 @@ export default function Privacy() {
                           <a>Google’s Privacy &amp; Terms page</a>.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                          <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="Data_Security">
                             Data Security
                           </span>
@@ -249,7 +249,7 @@ export default function Privacy() {
                           security.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                          <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="Third-Party_Links">
                             Third-Party Links
                           </span>
@@ -263,9 +263,9 @@ export default function Privacy() {
                           third-party websites you visit.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                          <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="Childrens_Privacy">
-                          Children’s Privacy
+                            Children’s Privacy
                           </span>
                         </h2>
                         <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498] pt-5 pb-5">
@@ -279,13 +279,13 @@ export default function Privacy() {
                           a child, we will delete that information promptly.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                          <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="Your_Rights">
                             Your Rights
                           </span>
                         </h2>
                         <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498] pt-5 pb-3">As a user, you have the following rights:</p>
-                       <ul className="wp-block-list flex flex-col gap-2 list-disc pl-5 ">
+                        <ul className="wp-block-list flex flex-col gap-2 list-disc pl-5 ">
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
                             <strong>Access:</strong> Request access to your
                             personal data.
@@ -308,7 +308,7 @@ export default function Privacy() {
                           using the details provided below.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                          <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="Changes_to_This_Privacy_Policy">
                             Changes to This Privacy Policy
                           </span>
@@ -323,7 +323,7 @@ export default function Privacy() {
                           made will signify your acceptance of those changes.
                         </p>
                         <hr className="wp-block-separator has-alpha-channel-opacity" />
-                          <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
+                        <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5">
                           <span id="Contact_Us">
                             Contact Us
                           </span>
