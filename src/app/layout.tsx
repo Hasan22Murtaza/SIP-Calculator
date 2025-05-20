@@ -350,7 +350,7 @@ export default function RootLayout({
 
   return (
     <>
-      <html lang="en" className={localStorage.getItem("theme") == "Dark" ? "dark" : "light"}>
+      <html lang="en" className={currentTheme == "Dark" ? "dark" : "light"}>
         <head>
           <meta charSet="UTF-8" />
           <meta
