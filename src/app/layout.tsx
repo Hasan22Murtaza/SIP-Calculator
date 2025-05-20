@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState("Light");
+  const [currentTheme, setCurrentTheme] = useState(localStorage.getItem("theme"));
   const [bgCss, setBgCss] = useState("");
 
   const MIN = 5000;
@@ -273,15 +273,15 @@ export default function RootLayout({
       // Function to toggle between light and dark mode
       const toggleThemeLayout = (dark: any) => {
         if (dark) {
+          setCurrentTheme("Dark");
           document.documentElement.classList.add("dark");
           document.documentElement.classList.remove("light");
           localStorage.setItem("theme", "dark");
-          setCurrentTheme("Dark");
         } else {
+          setCurrentTheme("Light");
           document.documentElement.classList.add("light");
           document.documentElement.classList.remove("dark");
           localStorage.setItem("theme", "light");
-          setCurrentTheme("Light");
         }
       };
 
@@ -349,7 +349,7 @@ export default function RootLayout({
 
   return (
     <>
-      <html lang="en" className="dark">
+      <html lang="en" className={currentTheme == "Dark" ? "dark" : "light"}>
         <head>
           <meta charSet="UTF-8" />
           <meta
@@ -390,7 +390,7 @@ export default function RootLayout({
         <body>
           <div className="bg-[#F4F4F4] dark:bg-[#08193c]">
             {/* navbar start  */}
-            <nav className="fixed z-[1020] w-full bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b] flex justify-between py-5  items-center transition-all duration-200">
+            <nav className="fixed z-[1020] w-full bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b] flex justify-between py-5  items-center">
               <div className=" w-full mx-auto  px-3 max-w-6xl">
                 <div className="flex justify-start items-center">
                   {/* <button
