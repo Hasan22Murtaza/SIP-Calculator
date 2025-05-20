@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState(localStorage.getItem("theme"));
+  const [currentTheme, setCurrentTheme] = useState("");
   const [bgCss, setBgCss] = useState("");
 
   const MIN = 5000;
@@ -270,6 +270,7 @@ export default function RootLayout({
   useEffect(() => {
     // Check if we're in the browser environment
     if (typeof window !== "undefined") {
+      // setCurrentTheme(localStorage.getItem("theme"));
       // Function to toggle between light and dark mode
       const toggleThemeLayout = (dark: any) => {
         if (dark) {
@@ -349,7 +350,7 @@ export default function RootLayout({
 
   return (
     <>
-      <html lang="en" className={currentTheme == "Dark" ? "dark" : "light"}>
+      <html lang="en" className={localStorage.getItem("theme") == "Dark" ? "dark" : "light"}>
         <head>
           <meta charSet="UTF-8" />
           <meta
