@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GoogleAd from '@/components/GoogleAd'
 
 export default function HomePage() {
     return (
@@ -568,6 +569,7 @@ export default function HomePage() {
                         You’re simply boosting your SIP slightly as your salary grows… and the
                         results are life-changing.
                     </p>
+                    <GoogleAd adSlot="5646679930" />
                     <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498]">
                         <span className="text-base font-medium text-my-black dark:text-white">Small moves. Big wins.</span>
                         <br />
@@ -1130,6 +1132,7 @@ export default function HomePage() {
                         up month after month, investing mindfully, and letting the magic of
                         compounding do its thing.
                     </p>
+                    <GoogleAd adSlot="5646679930" />
                     <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498] pt-5">
                         And a <span className="text-base font-medium text-my-black dark:text-white">SIP Calculator</span>?<br />
                         It’s not just some fancy tool.

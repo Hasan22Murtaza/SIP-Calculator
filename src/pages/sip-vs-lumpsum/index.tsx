@@ -57,7 +57,7 @@ export default function Pnb() {
 
                   <div className="flex flex-col gap-3 ">
                     <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
-                      <span id="How_the_SBI_SIP_Calculator_Helps_Investors">
+                      <span id="difference_between_sip_and_lumpsum">
                         What are the differences between SIP and lumpsum investments?
                       </span>
                     </h2>
@@ -152,7 +152,7 @@ export default function Pnb() {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
-                      <span>
+                      <span id="what_is_the_lumpsum_investment">
                         What is the Lumpsum Investment?
                       </span>
                     </h2>
@@ -180,7 +180,7 @@ export default function Pnb() {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
-                      <span >
+                      <span id="pros_and_cons_of_sip">
                         Pros and Cons of SIP (Systematic Investment Plan)
                       </span>
                     </h2>
@@ -191,7 +191,7 @@ export default function Pnb() {
 
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span >
+                      <span id="pros_of_sip">
                         Pros of SIP (Systematic Investment Plan)
                       </span>
                     </h3>
@@ -212,7 +212,7 @@ export default function Pnb() {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span >
+                      <span id="cons_of_sip">
                         Cons of SIP (Systematic Investment Plan)
                       </span>
                     </h3>
@@ -235,13 +235,21 @@ export default function Pnb() {
                     </ul>
                   </div>
                 </div>
-                <div className="flex flex-col gap-6 mb-8" itemProp="text">
+                <div className="flex flex-col gap-3 ">
+                  <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
+                    <span id="pros_and_cons_of_lumpsum">
+                      Pros and Cons of Lumpsum Investment Plan
+                    </span>
+                  </h2>
+                  <p className="text-base text-[rgba(2,11,30,0.6)] leading-8 dark:text-[#7B8498] pt-5">
+                    There is no doubt that Lumpsum’s investment plan is highly risky but along with the risk you will get the high rewards, so let’s see the pros and cons of the Lumpsum Investment plan.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-6 mb-8 pt-5" itemProp="text">
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span >
-
-                        Pros and Cons of the Lumpsum Investment Plan
-
+                      <span id="pros_of_lumpsum">
+                        Pros of Lumpsum Investment Plan
                       </span>
                     </h3>
                     <ul className="wp-block-list flex flex-col gap-2 list-disc pl-5">
@@ -261,7 +269,7 @@ export default function Pnb() {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span >
+                      <span id="cons_of_lumpsum">
 
                         Cons of Lumpsum Investment Plan
 
@@ -290,9 +298,8 @@ export default function Pnb() {
                 </div>
                 <div className="block mb-8">
                   <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
-                    <span>
+                    <span id="before_invest">
                       What are the factors you should consider before investing?
-
                     </span>
                   </h2>
 
@@ -303,8 +310,8 @@ export default function Pnb() {
                 <div className="flex flex-col gap-6 mb-8" itemProp="text">
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span>
-                        Cons of Lumpsum Investment Plan&nbsp;
+                      <span id="amount_of_money_you_want_to_invest">
+                        Amount of money you want to invest
                       </span>
                     </h3>
                     <p className="text-base text-[rgba(2,11,30,0.6)] leading-8 dark:text-[#7B8498] pt-5">
@@ -316,7 +323,7 @@ export default function Pnb() {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span>
+                      <span id="risk_tolerance">
                         Risk Tolerance
                       </span>
                     </h3>
@@ -327,7 +334,7 @@ export default function Pnb() {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span>
+                      <span id="period_of_investment">
                         Period of Investment
                       </span>
                     </h3>
@@ -340,7 +347,7 @@ export default function Pnb() {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <h3 className="wp-block-heading text-2xl text-my-black font-semibold dark:text-white">
-                      <span>
+                      <span id="market_timing">
                         Market Timing
                       </span>
                     </h3>
@@ -354,7 +361,7 @@ export default function Pnb() {
                 </div>
                 <div className="block mb-8">
                   <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white">
-                    <span>
+                    <span id="conclusion">
                       Conclusion: SIP vs Lumpsum Investment
                     </span>
                   </h2>
@@ -375,33 +382,33 @@ export default function Pnb() {
                   <p className="toc_title text-black text-lg font-medium mb-3">Contents</p>
                   <ul className="toc_list flex flex-col gap-2">
                     <li className="text-dark-green flex flex-col gap-1">
-                      <a href="#">
+                      <a href="#difference_between_sip_and_lumpsum">
                         <span className="toc_number toc_depth_1">1</span>  What are the differences between SIP and lumpsum investments?
                       </a>
 
                     </li>
                     <li className="text-dark-green flex flex-col gap-1">
-                      <a href="#">
+                      <a href="#Provides_Accurate_Estimates_of_SIP_Returns">
                         <span className="toc_number toc_depth_1">2</span>{" "}
                         What is SIP?
                       </a>
 
                     </li>
                     <li className="text-dark-green flex flex-col gap-1">
-                      <a href="#">
+                      <a href="#what_is_the_lumpsum_investment">
                         <span className="toc_number toc_depth_1">3</span>  What is the Lumpsum Investment?
                       </a>
 
                     </li>
                     <li className="text-dark-green flex flex-col gap-1">
-                      <a href="#">
+                      <a href="#pros_and_cons_of_sip">
                         <span className="toc_number toc_depth_1">4</span>  Pros and Cons of SIP (Systematic Investment Plan)
                       </a>
                       <ul className="text-dark-green pl-5 flex flex-col gap-1">
                         <li>
                           <ul>
                             <li>
-                              <a href="#">
+                              <a href="#pros_of_sip">
                                 <span className="toc_number toc_depth_3">
                                   4.1
                                 </span>{" "}
@@ -409,7 +416,7 @@ export default function Pnb() {
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="#cons_of_sip">
                                 <span className="toc_number toc_depth_3">
                                   4.2
                                 </span>{" "}
@@ -422,14 +429,14 @@ export default function Pnb() {
                       </ul>
                     </li>
                     <li className="text-dark-green flex flex-col gap-1">
-                      <a href="#">
+                      <a href="#pros_and_cons_of_lumpsum">
                         <span className="toc_number toc_depth_1">5</span>   Pros and Cons of the Lumpsum Investment Plan
                       </a>
                       <ul className="text-dark-green pl-5 flex flex-col gap-1">
                         <li>
                           <ul>
                             <li>
-                              <a href="#">
+                              <a href="#pros_of_lumpsum">
                                 <span className="toc_number toc_depth_3">
                                   5.1
                                 </span>{" "}
@@ -437,7 +444,7 @@ export default function Pnb() {
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="#cons_of_lumpsum">
                                 <span className="toc_number toc_depth_3">
                                   5.2
                                 </span>{" "}
@@ -450,14 +457,14 @@ export default function Pnb() {
                       </ul>
                     </li>
                     <li className="text-dark-green flex flex-col gap-1">
-                      <a href="#">
+                      <a href="#before_invest">
                         <span className="toc_number toc_depth_1">6</span>   What are the factors you should consider before investing?
                       </a>
                       <ul className="text-dark-green pl-5 flex flex-col gap-1">
                         <li>
                           <ul>
                             <li>
-                              <a href="#">
+                              <a href="#amount_of_money_you_want_to_invest">
                                 <span className="toc_number toc_depth_3">
                                   6.1
                                 </span>{" "}
@@ -465,7 +472,7 @@ export default function Pnb() {
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="#risk_tolerance">
                                 <span className="toc_number toc_depth_3">
                                   6.2
                                 </span>{" "}
@@ -473,7 +480,7 @@ export default function Pnb() {
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="#period_of_investment">
                                 <span className="toc_number toc_depth_3">
                                   6.3
                                 </span>{" "}
@@ -481,7 +488,7 @@ export default function Pnb() {
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="#market_timing">
                                 <span className="toc_number toc_depth_3">
                                   6.4
                                 </span>{" "}
@@ -493,7 +500,7 @@ export default function Pnb() {
                       </ul>
                     </li>
                     <li className="text-dark-green flex flex-col gap-1">
-                      <a href="#">
+                      <a href="#conclusion">
                         <span className="toc_number toc_depth_1">7</span> Conclusion: SIP vs Lumpsum Investment
                       </a>
 
@@ -508,60 +515,64 @@ export default function Pnb() {
 
 
             </div>
-            <div className="relative lg:py-[50px] lg:pb-0 py-8 lg:w-4/12 w-full">
+            <div className="relative lg:py-[50px] lg:pb-0 py-8 lg:w-4/12 w-half">
               <div className="max-w-6xl mx-auto px-3">
                 <div className="flex lg:flex-row flex-col gap-8 justify-between">
                   <div className="inside-article">
-                    <h2 className="lg:text-3xl text-xl text-my-black font-semibold dark:text-white">
-                      Here are other Most important SIP calculators:
-                    </h2>{" "}
-                    <ul className="flex flex-col gap-2 list-disc pl-5 p-5">
-                      <li className="text-dark-green">
-                        <Link href="/axis" className="text-dark-green">
-                          Axis Bank SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/hdfc" className="text-dark-green">
-                          HDFC SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/icici" className="text-dark-green">
-                          ICICI SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/idbi" className="text-dark-green">
-                          IDBI SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/kotak" className="text-dark-green">
-                          Kotak Bank SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/lic" className="text-dark-green">
-                          LIC SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/nippon" className="text-dark-green">
-                          Nippon India SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/pnb" className="text-dark-green">
-                          PNB SIP Calculator
-                        </Link>
-                      </li>
-                      <li className="text-dark-green">
-                        <Link href="/sbi" className="text-dark-green">
-                          SBI SIP Calculator
-                        </Link>
-                      </li>
-                    </ul>
+                    <div className="bg-white dark:bg-[#020B1E] border border-[#DCD7D7] dark:border-[#263c6b] rounded-2xl lg:max-w-[365px] w-full grow h-full">
+                      <div className="px-8 pt-7 flex flex-col gap-6 justify-center">
+                        <h2 className="lg:text-3xl text-xl text-my-black font-semibold dark:text-white">
+                          Here are other Most important SIP calculators:
+                        </h2>{" "}
+                        <ul className="flex flex-col gap-2 list-disc pl-5 p-3">
+                          <li className="text-dark-green">
+                            <Link href="/axis" className="text-dark-green">
+                              Axis Bank SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/hdfc" className="text-dark-green">
+                              HDFC SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/icici" className="text-dark-green">
+                              ICICI SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/idbi" className="text-dark-green">
+                              IDBI SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/kotak" className="text-dark-green">
+                              Kotak Bank SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/lic" className="text-dark-green">
+                              LIC SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/nippon" className="text-dark-green">
+                              Nippon India SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/pnb" className="text-dark-green">
+                              PNB SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green pb-7">
+                            <Link href="/sbi" className="text-dark-green">
+                              SBI SIP Calculator
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

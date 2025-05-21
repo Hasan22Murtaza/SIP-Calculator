@@ -1,5 +1,6 @@
 import RootLayout from "@/app/layout";
 import { LayoutRouter } from "next/dist/server/app-render/entry-base";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Disclaimer() {
@@ -58,8 +59,8 @@ export default function Disclaimer() {
                         please do not use the Website.
                       </p>
                       <hr className="mb-5" />
-                      <h3 className="lg:text-2xl text-xl text-my-black font-semibold dark:text-white">
-                        <span id="General_Information">
+                      <h3 id="General_Information" className="lg:text-2xl text-xl text-my-black font-semibold dark:text-white">
+                        <span>
                           General Information
                         </span>
                       </h3>
@@ -212,7 +213,15 @@ export default function Disclaimer() {
                         </p>
                         <ul className="toc_list">
                           <li className="mt-1 text-dark-green">
-                            <a href="#General_Information">
+                            <a href="#General_Information" onClick={(e) => {
+                              e.preventDefault();
+                              const el = document.getElementById('General_Information');
+                              if (el) {
+                                const yOffset = -80; // height of fixed header
+                                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                window.scrollTo({ top: y, behavior: 'smooth' });
+                              }
+                            }}>
                               <span className="me-2">1</span> General
                               Information
                             </a>
@@ -263,42 +272,64 @@ export default function Disclaimer() {
                 </div>
               </div>
             </div>
-            <div className="relative lg:py-[50px] lg:pb-0 py-8 lg:w-4/12 w-full">
+            <div className="relative lg:py-[50px] lg:pb-0 py-8 lg:w-4/12 w-half">
               <div className="max-w-6xl mx-auto px-3">
                 <div className="flex lg:flex-row flex-col gap-8 justify-between">
                   <div className="inside-article">
-                    <h2 className="lg:text-3xl text-xl text-my-black font-semibold dark:text-white">
-                      Here are other Most important SIP calculators:
-                    </h2>{" "}
-                    <ul className="flex flex-col gap-2 list-disc pl-5 p-5">
-                      <li className="text-dark-green">
-                        <a href="#">Axis Bank SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">HDFC SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">ICICI SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">IDBI SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">Kotak Bank SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">LIC SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">Nippon India SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">PNB SIP Calculator</a>
-                      </li>
-                      <li className="text-dark-green">
-                        <a href="#">SBI SIP Calculator</a>
-                      </li>
-                    </ul>
+                    <div className="bg-white dark:bg-[#020B1E] border border-[#DCD7D7] dark:border-[#263c6b] rounded-2xl lg:max-w-[365px] w-full grow h-full">
+                      <div className="px-8 pt-7 flex flex-col gap-6 justify-center">
+                        <h2 className="lg:text-3xl text-xl text-my-black font-semibold dark:text-white">
+                          Here are other Most important SIP calculators:
+                        </h2>{" "}
+                        <ul className="flex flex-col gap-2 list-disc pl-5 p-3">
+                          <li className="text-dark-green">
+                            <Link href="/axis" className="text-dark-green">
+                              Axis Bank SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/hdfc" className="text-dark-green">
+                              HDFC SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/icici" className="text-dark-green">
+                              ICICI SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/idbi" className="text-dark-green">
+                              IDBI SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/kotak" className="text-dark-green">
+                              Kotak Bank SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/lic" className="text-dark-green">
+                              LIC SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/nippon" className="text-dark-green">
+                              Nippon India SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green">
+                            <Link href="/pnb" className="text-dark-green">
+                              PNB SIP Calculator
+                            </Link>
+                          </li>
+                          <li className="text-dark-green pb-7">
+                            <Link href="/sbi" className="text-dark-green">
+                              SBI SIP Calculator
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

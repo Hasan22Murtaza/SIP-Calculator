@@ -7,6 +7,8 @@ import { useEffect, useRef, useState } from "react";
 import { ThemeProvider, useTheme } from "@/context/ThemeContext";
 import { Range } from "react-range";
 import HomePage from "./contents/home";
+import Script from 'next/script'
+import GoogleAd from '@/components/GoogleAd'
 
 export default function RootLayout({
   children,
@@ -403,6 +405,36 @@ export default function RootLayout({
 `.trim(),
             }}
           />
+
+          {/* Google AdSense */}
+          <Script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9611563092539287"
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+
+          {/* Google Analytics */}
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-6VYD98WT89"
+            strategy="afterInteractive"
+          />
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-6VYD98WT89');
+            `,
+            }}
+          />
+
+          {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9611563092539287"
+            crossorigin="anonymous"></script> */}
         </head>
         <body>
           <div className="bg-[#F4F4F4] dark:bg-[#08193c]">
@@ -1519,6 +1551,7 @@ export default function RootLayout({
 
                 <div className="relative lg:py-[50px] lg:pb-0 py-8">
                   <div className="max-w-6xl mx-auto px-3">
+                    <GoogleAd adSlot="5646679930" />
                     <HomePage />
                   </div>
                 </div>
@@ -1779,7 +1812,8 @@ export default function RootLayout({
                     <span className="text-sm text-[#434B5B] dark:text-[#7B8498]">
                       © {new Date().getFullYear()} SIP Calculator. All rights reserved.
                     </span>
-                    <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
+                    {/* <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 "> */}
+                    <div className="flex flex-wrap justify-center sm:justify-center lg:justify-start mt-4 lg:mt-0 gap-x-4 gap-y-2">
                       {/* <a
                         href="javascript:;"
                         className="group w-8 h-8 rounded-full bg-[#F4F4F4] dark:bg-[#08193c] flex justify-center items-center hover:bg-dark-green dark:hover:bg-dark-green hover:text-white transition-all duration-500"
