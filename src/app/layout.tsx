@@ -333,10 +333,10 @@ export default function RootLayout({
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
-  useEffect(() => {
-    setBgCss(currentTheme == "Dark" ? "#020b1e !important" : "#fff !important");
-    console.log(bgCss, " - BG CSS");
-  }, [currentTheme]);
+  // useEffect(() => {
+  //   setBgCss(currentTheme == "Dark" ? "#020b1e !important" : "#fff !important");
+  //   console.log(bgCss, " - BG CSS");
+  // }, [currentTheme]);
 
   const percentage = ((investment - MIN) / (MAX - MIN)) * 100;
   const lumpInsPercentage =
@@ -350,7 +350,7 @@ export default function RootLayout({
 
   return (
     <>
-      <html lang="en" className={currentTheme == "Dark" ? "dark" : "light"}>
+      <html lang="en">
         <head>
           <meta charSet="UTF-8" />
           <meta
@@ -387,6 +387,22 @@ export default function RootLayout({
           {/* <link rel="stylesheet" href="assets/css/apexcharts.min.css" /> */}
           <link rel="stylesheet" href="assets/css/style.css" />
           <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+          {/* ✅ Early theme detection */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+(function() {
+  try {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const theme = savedTheme || (prefersDark ? "dark" : "light");
+    document.documentElement.classList.add(theme);
+  } catch (_) {}
+})();
+`.trim(),
+            }}
+          />
         </head>
         <body>
           <div className="bg-[#F4F4F4] dark:bg-[#08193c]">
