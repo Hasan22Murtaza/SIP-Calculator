@@ -783,214 +783,214 @@ export default function HomePage() {
                     </table> */}
 
                     <div className="overflow-x-auto">
-                        <table className="w-full border-collapse">
-                            <thead className="bg-gray-500 dark:bg-gray-900">
-                                <tr>
-                                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-gray-100">
+                        <table className="has-fixed-layout w-full text-sm text-left  rounded-lg border-separate">
+                            <thead className="text-sm text-my-black   dark:text-white border-b-2 border-[#DCD7D7]  dark:border-[#263c6b]">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <th className="px-3 py-2">
                                         Fund Name
                                     </th>
-                                    <th className="px-6 py-3 text-right text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                    <th className="px-3 py-2 ">
                                         5-Year CAGR (%)
                                     </th>
-                                    <th className="px-6 py-3 text-right text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                    <th className="px-3 py-2">
                                         10-Year CAGR (%)
                                     </th>
-                                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                    <th className="px-3 py-2">
                                         Risk Level
                                     </th>
-                                    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                    <th className="px-3 py-2">
                                         Suitability
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-gray-800 dark:divide-gray-800">
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                            <tbody className=" border-b dark:border-gray-700 border-gray-200 text-[#434B5B] dark:text-[#7B8498]">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         Quant Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-3 py-2 ">
                                         43.5
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-3 py-2 ">
                                         22.8
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ">
                                             Very High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4 ">
                                         Aggressive investors with 7-10 year horizon
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         Parag Parikh Flexi Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4 ">
                                         29.0
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4 ">
                                         19.5
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 ">
                                             Moderately High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4 text-sm ">
                                         Investors seeking diversified exposure
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         ICICI Prudential Value Discovery Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-3 py-2 ">
                                         30.2
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-3 py-2 ">
                                         18.0
                                     </td>
-                                    <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                    <td className="px-3 py-2 ">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 ">
                                             Moderately High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-3 py-2 ">
                                         Investors seeking value stocks
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         Nippon India Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-3 py-2">
                                         34.7
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-3 py-2">
                                         24.5
                                     </td>
-                                    <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                    <td className="px-3 py-2">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ">
                                             Very High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-3 py-2">
                                         High-risk investors with 10+ year horizon
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         HDFC Flexi Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         31.87
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         18.2
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 ">
                                             Moderately High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4">
                                         Investors seeking flexibility and balanced risk-return
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         Axis Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         31.2
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         22.0
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ">
                                             Very High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4">
                                         Investors seeking small-cap exposure with lower volatility
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         ICICI Prudential Bluechip Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         24.9
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         15.8
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 ">
                                             Moderate
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4">
                                         Risk-averse investors seeking stability
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         Canara Robeco Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         33.8
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         24.0 (7-Year)
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ">
                                             Very High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4">
                                         Aggressive investors with long-term horizon
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         Mirae Asset Large & Midcap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         27.5
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         20.2
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 ">
                                             Moderately High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4">
                                         Investors seeking stability and growth
                                     </td>
                                 </tr>
-                                <tr className="hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
+                                    <td className="px-3 py-2 ">
                                         SBI Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         30.5
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-right font-medium text-emerald-600 dark:text-emerald-400">
+                                    <td className="px-6 py-4">
                                         23.5
                                     </td>
                                     <td className="px-6 py-4 text-sm">
-                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ">
                                             Very High
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">
+                                    <td className="px-6 py-4">
                                         High-risk investors aiming for capital appreciation
                                     </td>
                                 </tr>

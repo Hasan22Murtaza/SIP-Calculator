@@ -436,7 +436,7 @@ export default function RootLayout({
           {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9611563092539287"
             crossorigin="anonymous"></script> */}
         </head>
-        <body>
+        <body >
           <div className="bg-[#F4F4F4] dark:bg-[#08193c]">
             {/* navbar start  */}
             <nav className="fixed z-[1020] w-full bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b] flex justify-between py-5  items-center">
