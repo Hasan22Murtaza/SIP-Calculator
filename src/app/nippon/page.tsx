@@ -1,4 +1,4 @@
-import RootLayout from "@/app/layout";
+"use client"
 import Link from "next/link";
 
 import { useEffect, useState } from "react";
@@ -13,7 +13,6 @@ export default function Nippon() {
   }, []);
 
   return (
-    <RootLayout>
       <main>
         <div className="relative pt-[100px] md:pt-[140px] pb-[50px] bg-white dark:bg-my-black border-b border-[#DCD7D7] dark:border-[#263c6b]">
           <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
@@ -789,6 +788,5 @@ export default function Nippon() {
           </div>
         </div>
       </main>
-    </RootLayout>
   );
 }

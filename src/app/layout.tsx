@@ -333,6 +333,43 @@ export default function RootLayout({
     }
   }, []);
 
+  // Prevent automatic padding-left on body
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const removeBodyPadding = () => {
+        const body = document.body;
+        if (body.style.paddingLeft) {
+          body.style.paddingLeft = "0px";
+        }
+        if (body.style.padding) {
+          body.style.padding = "0px";
+        }
+      };
+
+      removeBodyPadding();
+
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+            removeBodyPadding();
+          }
+        });
+      });
+
+      observer.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['style']
+      });
+
+      const interval = setInterval(removeBodyPadding, 1000);
+
+      return () => {
+        observer.disconnect();
+        clearInterval(interval);
+      };
+    }
+  }, []);
+
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   // useEffect(() => {
@@ -360,6 +397,8 @@ export default function RootLayout({
             content="width=device-width, initial-scale=1.0"
           />
           <title>SIP Calculator</title>
+          <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
           {/* css links */}
 
           {/* <link
@@ -387,8 +426,6 @@ export default function RootLayout({
             href="https://cdn.jsdelivr.net/npm/rangeslider.js/dist/rangeslider.css"
           /> */}
           {/* <link rel="stylesheet" href="assets/css/apexcharts.min.css" /> */}
-          <link rel="stylesheet" href="assets/css/style.css" />
-          <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
           {/* ✅ Early theme detection */}
           <script
@@ -432,6 +469,7 @@ export default function RootLayout({
             `,
             }}
           />
+          <link rel="stylesheet" href="assets/css/style.css" />
 
           {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9611563092539287"
             crossorigin="anonymous"></script> */}

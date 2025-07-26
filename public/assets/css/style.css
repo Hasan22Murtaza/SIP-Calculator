@@ -445,6 +445,9 @@ html {
 body {
   font-family: "Inter";
   font-weight: 400;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-x: hidden;
 }
 
 p {
