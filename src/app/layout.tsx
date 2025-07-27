@@ -751,10 +751,10 @@ export default function RootLayout({
                   </ul>
                   <div className="ml-auto flex items-center lg:gap-5">
                     <a
-  href="https://whatsapp.com/channel/0029Vb6byC6AojYz30rltN0N"
-  target="_blank"
-  rel="nofollow noopener noreferrer"
->
+                      href="https://whatsapp.com/channel/0029Vb6byC6AojYz30rltN0N"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
                     <button className="py-3 px-3 lg:px-7 rounded-xl bg-dark-green text-xs lg:text-base text-white font-medium transition-all duration-500 hover:bg-[#178f2b]">
                       Start Your SIP
                     </button>

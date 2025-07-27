@@ -986,10 +986,16 @@ export default function SIPCalculator() {
                         </div>
                         {/* <div ref={chartRef} id="chart" /> */}
                         <div className="border-t border-[#DCD7D7] dark:border-[#263c6b] p-6">
+                            <a
+                              href="https://whatsapp.com/channel/0029Vb6byC6AojYz30rltN0N"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                            >
                           <button className="w-full py-4 px-8 rounded-xl bg-blue text-base text-white font-medium transition-all duration-500 hover:bg-[#236bff]">
                             Start Your{" "}
                             {activeTab === "sip" ? "SIP" : "Investment"}
                           </button>
+                          </a>
                         </div>
                       </div>
                     </div>
