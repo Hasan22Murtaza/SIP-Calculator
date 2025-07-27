@@ -1,4 +1,5 @@
 "use client"
+import SIPCalculator from "@/components/SIPCalculator";
 import Link from "next/link";
 
 import { useEffect, useState } from "react";
@@ -18,14 +19,16 @@ export default function Icici() {
       <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
         <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" >
           {" "}
-          The Most Accurate SIP Calculator To
+          ICICI Bank SIP Calculator
           <span className="text-dark-green">
             {" "}
-            Get Rich SIP by SIP{" "}
+            Calculate Your SIP Investment{" "}
           </span>{" "}
         </h1>
       </div>
     </div>
+     <SIPCalculator />
+    
     <div className="flex justify-center">
       <div className="flex lg:flex-row flex-col  gap-2  w-full md:max-w-5xl lg:max-w-6xl mx-auto">
         <div className="relative lg:py-[50px] lg:pb-5 py-8 lg:w-8/12 w-full">

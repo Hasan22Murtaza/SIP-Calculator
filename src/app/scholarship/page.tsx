@@ -100,7 +100,7 @@ export default function Terms() {
                           </span>
                         </h2>
                         <div className="block">
-                          <figure ><img width="940" height="588" src="https://allsipcalculator.in/wp-content/uploads/2025/05/All-SIP-Calculator-Scholarship-Program.png" alt="image" /></figure>
+                          <figure ><img width="940" height="588" src="/assets/images/how-to-apply.png" alt="image" /></figure>
                         </div>
                         <p className="text-base text-[#434B5B] leading-8 dark:text-[#7B8498] pt-5 pb-2">
                           Here’s what you need to do:
