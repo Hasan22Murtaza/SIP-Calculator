@@ -1,4 +1,5 @@
 "use client"
+import SIPCalculator from "@/components/SIPCalculator";
 import Link from "next/link";
 
 import { useEffect, useState } from "react";
@@ -26,6 +27,8 @@ export default function Axis() {
         </h1>
       </div>
     </div>
+                    <SIPCalculator />
+    
     <div className="flex justify-center">
       <div className="flex lg:flex-row flex-col  gap-2  w-full md:max-w-5xl lg:max-w-6xl mx-auto">
         <div className="relative lg:py-[50px] lg:pb-5 py-8 lg:w-8/12 w-full">
