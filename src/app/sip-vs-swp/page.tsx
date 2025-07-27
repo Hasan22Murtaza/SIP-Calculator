@@ -20,9 +20,11 @@ export default function Pnb() {
         <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" >
           {" "}
           SIP vs SWP 
+            <br />
+
           <span className="text-dark-green">
             {" "}
-            which one is better{" "}
+           which one is better{" "}
           </span>{" "}
         </h1>
       </div>
