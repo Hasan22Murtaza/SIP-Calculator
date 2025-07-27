@@ -393,97 +393,101 @@ export default function RootLayout({
     };
 
     const getPageMeta = (path: string) => {
-      const meta = {
-        title: "SIP Calculator",
-        description: "The most accurate SIP calculator to plan your investments and achieve your financial goals SIP by SIP.",
-      };
+  const meta = {
+    title: "SIP Calculator",
+    description:
+      "The most accurate SIP calculator to plan your investments and achieve your financial goals SIP by SIP.",
+  };
 
-      switch (path) {
-        case "/":
-          meta.title = "SIP Calculator - Plan Your Wealth Creation";
-          meta.description =
-            "Use our accurate SIP calculator to estimate returns on your Systematic Investment Plan and achieve your financial goals.";
-          break;
-        case "/sip-vs-lumpsum":
-          meta.title = "SIP vs Lump Sum Calculator";
-          meta.description =
-            "Compare SIP and Lump Sum investments to make informed decisions with our accurate calculator.";
-          break;
-        case "/sip-vs-swp":
-          meta.title = "SIP vs SWP Calculator";
-          meta.description =
-            "Understand the differences between SIP and SWP with our reliable calculator to plan your investments.";
-          break;
-        case "/axis":
-          meta.title = "Axis Bank SIP Calculator";
-          meta.description =
-            "Calculate your SIP returns with Axis Bank using our precise SIP calculator.";
-          break;
-        case "/hdfc":
-          meta.title = "HDFC SIP Calculator";
-          meta.description =
-            "Estimate your SIP returns with HDFC using our accurate and easy-to-use calculator.";
-          break;
-        case "/icici":
-          meta.title = "ICICI SIP Calculator";
-          meta.description =
-            "Plan your ICICI SIP investments with our reliable SIP calculator.";
-          break;
-        case "/idbi":
-          meta.title = "IDBI SIP Calculator";
-          meta.description =
-            "Calculate your IDBI SIP returns with our precise and user-friendly calculator.";
-          break;
-        case "/kotak":
-          meta.title = "Kotak Bank SIP Calculator";
-          meta.description =
-            "Use our Kotak Bank SIP calculator to estimate your investment returns accurately.";
-          break;
-        case "/lic":
-          meta.title = "LIC SIP Calculator";
-          meta.description =
-            "Plan your LIC SIP investments with our accurate and reliable calculator.";
-          break;
-        case "/nippon":
-          meta.title = "Nippon India SIP Calculator";
-          meta.description =
-            "Calculate your Nippon India SIP returns with our precise SIP calculator.";
-          break;
-        case "/pnb":
-          meta.title = "PNB SIP Calculator";
-          meta.description =
-            "Estimate your PNB SIP returns with our user-friendly and accurate calculator.";
-          break;
-        case "/sbi":
-          meta.title = "SBI SIP Calculator";
-          meta.description =
-            "Use our SBI SIP calculator to plan your investments and estimate returns accurately.";
-          break;
-        case "/disclaimer":
-          meta.title = "Disclaimer - SIP Calculator";
-          meta.description =
-            "Read the disclaimer for using our SIP calculator and understand the terms of service.";
-          break;
-        case "/privacy":
-          meta.title = "Privacy Policy - SIP Calculator";
-          meta.description =
-            "Review our privacy policy to understand how we handle your data on the SIP Calculator.";
-          break;
-        case "/terms":
-          meta.title = "Terms of Service - SIP Calculator";
-          meta.description =
-            "Understand the terms of service for using our SIP calculator.";
-          break;
-        case "/scholarship":
-          meta.title = "Scholarship - SIP Calculator";
-          meta.description =
-            "Learn about scholarship opportunities related to financial planning with our SIP calculator.";
-          break;
-        default:
-          break;
-      }
-      return meta;
-    };
+  switch (path) {
+    case "/":
+      meta.title = "SIP Calculator - Plan Your Wealth Creation";
+      meta.description =
+        "Plan your wealth creation with our advanced SIP calculator. Estimate your returns and grow your investments effectively.";
+      break;
+    case "/sip-vs-lumpsum":
+      meta.title = "SIP vs Lumpsum Investment: Which one is Best?";
+      meta.description =
+        "Discover the best investment strategy with our SIP vs Lumpsum comparison tool. Make smarter financial decisions today.";
+      break;
+    case "/sip-vs-swp":
+      meta.title = "SIP vs SWP which is one is better";
+      meta.description =
+        "Compare SIP and SWP to find the right investment option for your financial goals using our insightful calculator.";
+      break;
+    case "/axis":
+      meta.title =
+        "Axis Bank SIP Calculator – Calculate Your SIP Investment Accurately";
+      meta.description =
+        "Use our Axis Bank SIP calculator to precisely estimate your investment returns and plan better.";
+      break;
+    case "/hdfc":
+      meta.title = "HDFC Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Calculate your HDFC SIP returns accurately using our reliable and user-friendly SIP calculator.";
+      break;
+    case "/icici":
+      meta.title = "ICICI Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Plan and calculate your SIP returns with ICICI using our easy and accurate SIP calculator.";
+      break;
+    case "/idbi":
+      meta.title = "IDBI Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Get precise return estimates for your IDBI SIP investments with our tailored calculator.";
+      break;
+    case "/kotak":
+      meta.title = "Kotak Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Use our Kotak SIP calculator to get accurate projections and plan your financial future with ease.";
+      break;
+    case "/lic":
+      meta.title = "LIC Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Accurately calculate your LIC SIP investments and returns using our trusted calculator.";
+      break;
+    case "/nippon":
+      meta.title = "Nippon Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Easily estimate your returns from Nippon SIP investments with our accurate online calculator.";
+      break;
+    case "/pnb":
+      meta.title = "PNB Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Get reliable SIP return estimates for PNB investments using our efficient calculator.";
+      break;
+    case "/sbi":
+      meta.title = "SBI Bank SIP Calculator – Calculate Your SIP Investment";
+      meta.description =
+        "Plan your SIP investments with SBI and calculate returns using our highly accurate SIP calculator.";
+      break;
+    case "/disclaimer":
+      meta.title = "Disclaimer - SIP Calculator";
+      meta.description =
+        "View our disclaimer to understand the terms, limitations, and assumptions behind our SIP calculator.";
+      break;
+    case "/privacy":
+      meta.title = "Privacy Policy - SIP Calculator";
+      meta.description =
+        "Review how your personal data is collected, used, and protected with our SIP calculator's privacy policy.";
+      break;
+    case "/terms":
+      meta.title = "Terms of Service - SIP Calculator";
+      meta.description =
+        "Read the terms of service for using the SIP calculator and understand your rights and responsibilities.";
+      break;
+    case "/scholarship":
+      meta.title = "Scholarship - SIP Calculator";
+      meta.description =
+        "Explore scholarship opportunities that promote financial literacy and investment education through SIP planning.";
+      break;
+    default:
+      break;
+  }
+
+  return meta;
+};
+
 
     const { title, description } = getPageMeta(pathname);
   return (
@@ -746,9 +750,15 @@ export default function RootLayout({
      
                   </ul>
                   <div className="ml-auto flex items-center lg:gap-5">
-                    <button className="py-3 px-3 lg:px-7 rounded-xl bg-dark-green text-xs lg:text-base text-white font-medium transition-all duration-500 hover:bg-[#178f2b]" onClick={handlGoToSIP}>
+                    <a
+  href="https://whatsapp.com/channel/0029Vb6byC6AojYz30rltN0N"
+  target="_blank"
+  rel="nofollow noopener noreferrer"
+>
+                    <button className="py-3 px-3 lg:px-7 rounded-xl bg-dark-green text-xs lg:text-base text-white font-medium transition-all duration-500 hover:bg-[#178f2b]">
                       Start Your SIP
                     </button>
+                    </a>
                     <div className="relative">
                       {/* Dark Mode Toggle */}
                       <label
