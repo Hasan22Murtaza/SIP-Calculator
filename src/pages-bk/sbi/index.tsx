@@ -480,36 +480,36 @@ export default function Pnb() {
                       <tbody className=" border-b dark:border-gray-700 border-gray-200 text-[#434B5B] dark:text-[#7B8498]">
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">SBI Small Cap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">32.2</td>
-                          <td className="px-3 py-2 ">22.5</td>
+                          <td className="px-3 py-2 text-center">32.2</td>
+                          <td className="px-3 py-2 text-center">22.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Aggressive investors with 7-10 year horizon</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">SBI Magnum Midcap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">31.5</td>
-                          <td className="px-3 py-2 ">20.8</td>
+                          <td className="px-3 py-2 text-center">31.5</td>
+                          <td className="px-3 py-2 text-center">20.8</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking mid-cap growth with high risk</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">SBI Long Term Equity Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">30.3</td>
-                          <td className="px-3 py-2 ">16.6</td>
+                          <td className="px-3 py-2 text-center">30.3</td>
+                          <td className="px-3 py-2 text-center">16.6</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking tax benefits under Section 80C</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">SBI Contra Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">29.8</td>
-                          <td className="px-3 py-2 ">18.7</td>
+                          <td className="px-3 py-2 text-center">29.8</td>
+                          <td className="px-3 py-2 text-center">18.7</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking value-oriented equity growth</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">SBI PSU Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">29.5</td>
-                          <td className="px-3 py-2 ">14.5</td>
+                          <td className="px-3 py-2 text-center">29.5</td>
+                          <td className="px-3 py-2 text-center">14.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking thematic PSU exposure</td>
                         </tr>
@@ -517,8 +517,8 @@ export default function Pnb() {
                           <td className="px-3 py-2 ">
                             SBI Healthcare Opportunities Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">26.7</td>
-                          <td className="px-3 py-2 ">16.3</td>
+                          <td className="px-3 py-2 text-center">26.7</td>
+                          <td className="px-3 py-2 text-center">16.3</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking sectoral healthcare exposure</td>
                         </tr>
@@ -526,8 +526,8 @@ export default function Pnb() {
                           <td className="px-3 py-2 ">
                             SBI Large &amp; Midcap Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">26.5</td>
-                          <td className="px-3 py-2 ">17.8</td>
+                          <td className="px-3 py-2 text-center">26.5</td>
+                          <td className="px-3 py-2 text-center">17.8</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking balanced large and mid-cap growth
@@ -535,8 +535,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">SBI Flexicap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">24.8</td>
-                          <td className="px-3 py-2 ">16.5</td>
+                          <td className="px-3 py-2 text-center">24.8</td>
+                          <td className="px-3 py-2 text-center">16.5</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking diversified equity across market caps
@@ -544,8 +544,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">SBI Bluechip Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">22.7</td>
-                          <td className="px-3 py-2 ">15.2</td>
+                          <td className="px-3 py-2 text-center">22.7</td>
+                          <td className="px-3 py-2 text-center">15.2</td>
                           <td className="px-3 py-2 ">High</td>
                           <td className="px-3 py-2 ">Investors seeking stable large-cap returns</td>
                         </tr>
@@ -553,8 +553,8 @@ export default function Pnb() {
                           <td className="px-3 py-2 ">
                             SBI Balanced Advantage Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">20.5 (3-Year: 15.8)</td>
-                          <td className="px-3 py-2 ">N/A (since 2021)</td>
+                          <td className="px-3 py-2 text-center">20.5 (3-Year: 15.8)</td>
+                          <td className="px-3 py-2 text-center">N/A (since 2021)</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">Investors seeking dynamic equity-debt allocation</td>
                         </tr>

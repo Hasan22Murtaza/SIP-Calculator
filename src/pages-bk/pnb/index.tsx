@@ -484,8 +484,8 @@ export default function Pnb() {
                       <tbody className=" border-b dark:border-gray-700 border-gray-200 text-[#434B5B] dark:text-[#7B8498]">
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Virtue II Fund</td>
-                          <td className="px-3 py-2 ">18.5</td>
-                          <td className="px-3 py-2 ">13.5</td>
+                          <td className="px-3 py-2 text-center">18.5</td>
+                          <td className="px-3 py-2 text-center">13.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Aggressive investors seeking equity growth with life
@@ -494,8 +494,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Multiplier II Fund</td>
-                          <td className="px-3 py-2 ">17.8</td>
-                          <td className="px-3 py-2 ">12.8</td>
+                          <td className="px-3 py-2 text-center ">17.8</td>
+                          <td className="px-3 py-2 text-center">12.8</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking high equity exposure and long-term
@@ -504,8 +504,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Bharat Manufacturing Fund</td>
-                          <td className="px-3 py-2 ">17.0 (3-Year: 20.5)</td>
-                          <td className="px-3 py-2 ">N/A (since 2024)</td>
+                          <td className="px-3 py-2 text-center">17.0 (3-Year: 20.5)</td>
+                          <td className="px-3 py-2 text-center">N/A (since 2024)</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking thematic manufacturing growth with
@@ -514,8 +514,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Flexi Cap Fund</td>
-                          <td className="px-3 py-2 ">16.5</td>
-                          <td className="px-3 py-2 ">12.0</td>
+                          <td className="px-3 py-2 text-center">16.5</td>
+                          <td className="px-3 py-2 text-center">12.0</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking diversified equity across market caps
@@ -523,8 +523,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Premier Multi-Cap Fund</td>
-                          <td className="px-3 py-2 ">16.0</td>
-                          <td className="px-3 py-2 ">11.8</td>
+                          <td className="px-3 py-2 text-center">16.0</td>
+                          <td className="px-3 py-2 text-center">11.8</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking multi-cap growth with long-term
@@ -533,8 +533,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Equity Fund</td>
-                          <td className="px-3 py-2 ">15.5</td>
-                          <td className="px-3 py-2 ">11.5</td>
+                          <td className="px-3 py-2 text-center">15.5</td>
+                          <td className="px-3 py-2 text-center">11.5</td>
                           <td className="px-3 py-2 ">High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking stable large-cap equity returns with
@@ -543,15 +543,15 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Mid Cap Fund</td>
-                          <td className="px-3 py-2 ">15.0</td>
-                          <td className="px-3 py-2 ">11.0 (since 2017)</td>
+                          <td className="px-3 py-2 text-center">15.0</td>
+                          <td className="px-3 py-2 text-center">11.0 (since 2017)</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking mid-cap growth with high risk</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Balanced Fund</td>
-                          <td className="px-3 py-2 ">12.5</td>
-                          <td className="px-3 py-2 ">9.5</td>
+                          <td className="px-3 py-2 text-center">12.5</td>
+                          <td className="px-3 py-2 text-center">9.5</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking equity-debt balance with moderate risk
@@ -559,8 +559,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Protector II Fund</td>
-                          <td className="px-3 py-2 ">10.5</td>
-                          <td className="px-3 py-2 ">8.5</td>
+                          <td className="px-3 py-2 text-center">10.5</td>
+                          <td className="px-3 py-2 text-center">8.5</td>
                           <td className="px-3 py-2 ">Moderate</td>
                           <td className="px-3 py-2 ">
                             Investors seeking debt-heavy stability with some equity
@@ -568,8 +568,8 @@ export default function Pnb() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">PNB MetLife Liquid Fund</td>
-                          <td className="px-3 py-2 ">6.5</td>
-                          <td className="px-3 py-2 ">6.0</td>
+                          <td className="px-3 py-2 text-center">6.5</td>
+                          <td className="px-3 py-2 text-center">6.0</td>
                           <td className="px-3 py-2 ">Low</td>
                           <td className="px-3 py-2 ">
                             Conservative investors seeking short-term stability

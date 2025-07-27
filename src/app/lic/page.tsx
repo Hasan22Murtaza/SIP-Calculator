@@ -451,22 +451,22 @@ export default function Lic() {
                           <td className="px-3 py-2 ">
                             LIC MF Large &amp; Mid Cap Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">23.53</td>
-                          <td className="px-3 py-2 ">14.8</td>
+                          <td className="px-3 py-2 text-center">23.53</td>
+                          <td className="px-3 py-2 text-center">14.8</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking large and mid-cap growth</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF ELSS Tax Saver Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">22.43</td>
-                          <td className="px-3 py-2 ">13.5</td>
+                          <td className="px-3 py-2 text-center">22.43</td>
+                          <td className="px-3 py-2 text-center">13.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking tax benefits under Section 80C</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF Flexi Cap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">19.4</td>
-                          <td className="px-3 py-2 ">12.7</td>
+                          <td className="px-3 py-2 text-center">19.4</td>
+                          <td className="px-3 py-2 text-center">12.7</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking diversified equity across market caps
@@ -474,15 +474,15 @@ export default function Lic() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF Large Cap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">17.57</td>
-                          <td className="px-3 py-2 ">12.3</td>
+                          <td className="px-3 py-2 text-center">17.57</td>
+                          <td className="px-3 py-2 text-center">12.3</td>
                           <td className="px-3 py-2 ">High</td>
                           <td className="px-3 py-2 ">Investors seeking stable large-cap returns</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF Infrastructure Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">15.0</td>
-                          <td className="px-3 py-2 ">11.5</td>
+                          <td className="px-3 py-2 text-center">15.0</td>
+                          <td className="px-3 py-2 text-center">11.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking thematic infrastructure exposure
@@ -490,8 +490,8 @@ export default function Lic() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF Midcap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">14.5</td>
-                          <td className="px-3 py-2 ">11.0 (since 2017)</td>
+                          <td className="px-3 py-2 text-center">14.5</td>
+                          <td className="px-3 py-2 text-center">11.0 (since 2017)</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking mid-cap growth with high risk</td>
                         </tr>
@@ -499,22 +499,22 @@ export default function Lic() {
                           <td className="px-3 py-2 ">
                             LIC MF Balanced Advantage Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">13.8</td>
-                          <td className="px-3 py-2 ">N/A (since 2021)</td>
+                          <td className="px-3 py-2 text-center">13.8</td>
+                          <td className="px-3 py-2 text-center">N/A (since 2021)</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">Investors seeking dynamic equity-debt allocation</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF Equity Hybrid Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">13.5</td>
-                          <td className="px-3 py-2 ">10.8</td>
+                          <td className="px-3 py-2 text-center">13.5</td>
+                          <td className="px-3 py-2 text-center">10.8</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">Investors seeking hybrid equity-debt stability</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF Gold ETF FoF – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">13.0</td>
-                          <td className="px-3 py-2 ">8.5</td>
+                          <td className="px-3 py-2 text-center">13.0</td>
+                          <td className="px-3 py-2 text-center">8.5</td>
                           <td className="px-3 py-2 ">Moderate</td>
                           <td className="px-3 py-2 ">
                             Investors seeking gold-based exposure with moderate risk
@@ -522,8 +522,8 @@ export default function Lic() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">LIC MF Multi Cap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">12.5 (3-Year)</td>
-                          <td className="px-3 py-2 ">N/A (since 2022)</td>
+                          <td className="px-3 py-2 text-center">12.5 (3-Year)</td>
+                          <td className="px-3 py-2 text-center">N/A (since 2022)</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking diversified multi-cap growth</td>
                         </tr>

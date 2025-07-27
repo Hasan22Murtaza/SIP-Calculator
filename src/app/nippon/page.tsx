@@ -442,15 +442,15 @@ export default function Nippon() {
                           <td className="px-3 py-2 ">
                             Nippon India Small Cap Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">37.86</td>
-                          <td className="px-3 py-2 ">24.5</td>
+                          <td className="px-3 py-2 text-center">37.86</td>
+                          <td className="px-3 py-2 text-center">24.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Aggressive investors with 7-10 year horizon</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Nippon India Growth Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">33.02</td>
-                          <td className="px-3 py-2 ">22.7</td>
+                          <td className="px-3 py-2 text-center">33.02</td>
+                          <td className="px-3 py-2 text-center">22.7</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking mid-cap growth with high risk</td>
                         </tr>
@@ -458,8 +458,8 @@ export default function Nippon() {
                           <td className="px-3 py-2 ">
                             Nippon India Multi Cap Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">33.34</td>
-                          <td className="px-3 py-2 ">17.5</td>
+                          <td className="px-3 py-2 text-center">33.34</td>
+                          <td className="px-3 py-2 text-center">17.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking diversified multi-cap growth</td>
                         </tr>
@@ -468,8 +468,8 @@ export default function Nippon() {
                             Nippon India Power &amp; Infra Fund – Direct Plan
                             (Growth)
                           </td>
-                          <td className="px-3 py-2 ">30.63</td>
-                          <td className="px-3 py-2 ">18.5</td>
+                          <td className="px-3 py-2 text-center">30.63</td>
+                          <td className="px-3 py-2 text-center">18.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking thematic infrastructure exposure
@@ -477,15 +477,15 @@ export default function Nippon() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Nippon India Pharma Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">24.5</td>
-                          <td className="px-3 py-2 ">16.8</td>
+                          <td className="px-3 py-2 text-center">24.5</td>
+                          <td className="px-3 py-2 text-center">16.8</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking sectoral pharma exposure</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Nippon India Value Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">22.5</td>
-                          <td className="px-3 py-2 ">16.74</td>
+                          <td className="px-3 py-2 text-center">22.5</td>
+                          <td className="px-3 py-2 text-center">16.74</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking value-oriented equity growth</td>
                         </tr>
@@ -493,8 +493,8 @@ export default function Nippon() {
                           <td className="px-3 py-2 ">
                             Nippon India Large Cap Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">22.0</td>
-                          <td className="px-3 py-2 ">16.3</td>
+                          <td className="px-3 py-2 text-center">22.0</td>
+                          <td className="px-3 py-2 text-center">16.3</td>
                           <td className="px-3 py-2 ">High</td>
                           <td className="px-3 py-2 ">Investors seeking stable large-cap returns</td>
                         </tr>
@@ -502,8 +502,8 @@ export default function Nippon() {
                           <td className="px-3 py-2 ">
                             Nippon India ELSS Tax Saver Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">21.5</td>
-                          <td className="px-3 py-2 ">13.8</td>
+                          <td className="px-3 py-2 text-center">21.5</td>
+                          <td className="px-3 py-2 text-center">13.8</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking tax benefits under Section 80C</td>
                         </tr>
@@ -511,8 +511,8 @@ export default function Nippon() {
                           <td className="px-3 py-2 ">
                             Nippon India Equity Hybrid Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">19.0</td>
-                          <td className="px-3 py-2 ">12.5</td>
+                          <td className="px-3 py-2 text-center">19.0</td>
+                          <td className="px-3 py-2 text-center">12.5</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">Investors seeking hybrid equity-debt stability</td>
                         </tr>
@@ -520,8 +520,8 @@ export default function Nippon() {
                           <td className="px-3 py-2 ">
                             Nippon India Consumption Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">18.5</td>
-                          <td className="px-3 py-2 ">15.0 (since 2013)</td>
+                          <td className="px-3 py-2 text-center">18.5</td>
+                          <td className="px-3 py-2 text-center">15.0 (since 2013)</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking sectoral consumption exposure</td>
                         </tr>

@@ -808,10 +808,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         Quant Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-3 py-2 ">
+                                    <td className="px-3 py-2 text-center">
                                         43.5
                                     </td>
-                                    <td className="px-3 py-2 ">
+                                    <td className="px-3 py-2 text-center">
                                         22.8
                                     </td>
                                     <td className="px-6 py-4 text-sm">
@@ -827,10 +827,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         Parag Parikh Flexi Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4 ">
+                                    <td className="px-6 py-4 text-center">
                                         29.0
                                     </td>
-                                    <td className="px-6 py-4 ">
+                                    <td className="px-6 py-4 text-center">
                                         19.5
                                     </td>
                                     <td className="px-6 py-4 text-sm">
@@ -846,10 +846,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         ICICI Prudential Value Discovery Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-3 py-2 ">
+                                    <td className="px-3 py-2 text-center">
                                         30.2
                                     </td>
-                                    <td className="px-3 py-2 ">
+                                    <td className="px-3 py-2 text-center">
                                         18.0
                                     </td>
                                     <td className="px-3 py-2 ">
@@ -865,10 +865,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         Nippon India Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-3 py-2">
+                                    <td className="px-3 py-2 text-center">
                                         34.7
                                     </td>
-                                    <td className="px-3 py-2">
+                                    <td className="px-3 py-2 text-center">
                                         24.5
                                     </td>
                                     <td className="px-3 py-2">
@@ -884,10 +884,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         HDFC Flexi Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         31.87
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         18.2
                                     </td>
                                     <td className="px-6 py-4 text-sm">
@@ -903,10 +903,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         Axis Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         31.2
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         22.0
                                     </td>
                                     <td className="px-6 py-4 text-sm">
@@ -922,10 +922,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         ICICI Prudential Bluechip Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         24.9
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         15.8
                                     </td>
                                     <td className="px-6 py-4 text-sm">
@@ -941,10 +941,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         Canara Robeco Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         33.8
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         24.0 (7-Year)
                                     </td>
                                     <td className="px-6 py-4 text-sm">
@@ -960,10 +960,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         Mirae Asset Large & Midcap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         27.5
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         20.2
                                     </td>
                                     <td className="px-6 py-4 text-sm">
@@ -979,10 +979,10 @@ export default function HomePage() {
                                     <td className="px-3 py-2 ">
                                         SBI Small Cap Fund – Direct Plan (Growth)
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         30.5
                                     </td>
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 text-center">
                                         23.5
                                     </td>
                                     <td className="px-6 py-4 text-sm">

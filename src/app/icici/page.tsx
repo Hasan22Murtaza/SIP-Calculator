@@ -471,8 +471,8 @@ export default function Icici() {
                         ICICI Prudential Infrastructure Fund – Direct Plan
                         (Growth)
                       </td>
-                      <td className="px-3 py-2 ">39.75</td>
-                      <td className="px-3 py-2 ">16.54</td>
+                      <td className="px-3 py-2 text-center">39.75</td>
+                      <td className="px-3 py-2 text-center">16.54</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking sectoral exposure to infrastructure
@@ -482,8 +482,8 @@ export default function Icici() {
                       <td className="px-3 py-2 ">
                         ICICI Prudential BHARAT 22 FOF – Direct Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">34.17</td>
-                      <td className="px-3 py-2 ">25.51 (since 2018)</td>
+                      <td className="px-3 py-2 text-center">34.17</td>
+                      <td className="px-3 py-2 text-center">25.51 (since 2018)</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking diversified equity with no lock-in
@@ -494,8 +494,8 @@ export default function Icici() {
                         ICICI Prudential India Opportunities Fund – Direct
                         Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">32.98</td>
-                      <td className="px-3 py-2 ">21.99 (since 2018)</td>
+                      <td className="px-3 py-2 text-center">32.98</td>
+                      <td className="px-3 py-2 text-center">21.99 (since 2018)</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">Investors seeking thematic equity exposure</td>
                     </tr>
@@ -504,8 +504,8 @@ export default function Icici() {
                         ICICI Prudential Value Discovery Fund – Direct Plan
                         (Growth)
                       </td>
-                      <td className="px-3 py-2 ">31.75</td>
-                      <td className="px-3 py-2 ">20.2</td>
+                      <td className="px-3 py-2 text-center">31.75</td>
+                      <td className="px-3 py-2 text-center">20.2</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking value stocks for long-term growth
@@ -516,8 +516,8 @@ export default function Icici() {
                         ICICI Prudential Large &amp; Mid Cap Fund – Direct
                         Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">31.61</td>
-                      <td className="px-3 py-2 ">18.5</td>
+                      <td className="px-3 py-2 text-center">31.61</td>
+                      <td className="px-3 py-2 text-center">18.5</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking balanced large and mid-cap exposure
@@ -528,8 +528,8 @@ export default function Icici() {
                         ICICI Prudential Equity &amp; Debt Fund – Direct Plan
                         (Growth)
                       </td>
-                      <td className="px-3 py-2 ">29.33</td>
-                      <td className="px-3 py-2 ">17.5</td>
+                      <td className="px-3 py-2 text-center">29.33</td>
+                      <td className="px-3 py-2 text-center">17.5</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">Investors seeking hybrid equity-debt stability</td>
                     </tr>
@@ -537,8 +537,8 @@ export default function Icici() {
                       <td className="px-3 py-2 ">
                         ICICI Prudential MidCap Fund – Direct Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">28.0</td>
-                      <td className="px-3 py-2 ">15.8</td>
+                      <td className="px-3 py-2 text-center">28.0</td>
+                      <td className="px-3 py-2 text-center">15.8</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">Investors seeking mid-cap growth with high risk</td>
                     </tr>
@@ -546,8 +546,8 @@ export default function Icici() {
                       <td className="px-3 py-2 ">
                         ICICI Prudential Bluechip Fund – Direct Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">27.23</td>
-                      <td className="px-3 py-2 ">15.9</td>
+                      <td className="px-3 py-2 text-center">27.23</td>
+                      <td className="px-3 py-2 text-center">15.9</td>
                       <td className="px-3 py-2 ">High</td>
                       <td className="px-3 py-2 ">Investors seeking stable large-cap returns</td>
                     </tr>
@@ -556,8 +556,8 @@ export default function Icici() {
                         ICICI Prudential Nifty Next 50 Index Fund – Direct
                         Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">25.29</td>
-                      <td className="px-3 py-2 ">14.7</td>
+                      <td className="px-3 py-2 text-center">25.29</td>
+                      <td className="px-3 py-2 text-center">14.7</td>
                       <td className="px-3 py-2 ">High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking passive exposure to Nifty Next 50
@@ -568,8 +568,8 @@ export default function Icici() {
                         ICICI Prudential Balanced Advantage Fund – Direct Plan
                         (Growth)
                       </td>
-                      <td className="px-3 py-2 ">18.59</td>
-                      <td className="px-3 py-2 ">13.8</td>
+                      <td className="px-3 py-2 text-center">18.59</td>
+                      <td className="px-3 py-2 text-center">13.8</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking dynamic equity-debt allocation

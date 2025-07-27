@@ -450,8 +450,8 @@ export default function Axis() {
                               <td className="px-3 py-2 rounded-tl-lg">
                                 Axis Small Cap Fund – Direct Plan (Growth)
                               </td>
-                              <td className="px-3 py-2 ">31.2</td>
-                              <td className="px-3 py-2">22.0</td>
+                              <td className="px-3 py-2 text-center">31.2</td>
+                              <td className="px-3 py-2 text-center">22.0</td>
                               <td className="px-3 py-2">Very High</td>
                               <td className="px-3 py-2">
                                 Investors seeking small-cap exposure with lower
@@ -460,8 +460,8 @@ export default function Axis() {
                             </tr>
                             <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                               <td className="px-3 py-2">Axis Midcap Fund – Direct Plan (Growth)</td>
-                              <td className="px-3 py-2">28.32</td>
-                              <td className="px-3 py-2">18.5</td>
+                              <td className="px-3 py-2 text-center">28.32</td>
+                              <td className="px-3 py-2 text-center">18.5</td>
                               <td className="px-3 py-2">Very High</td>
                               <td className="px-3 py-2">
                                 Investors seeking mid-cap growth with moderate
@@ -473,8 +473,8 @@ export default function Axis() {
                                 Axis Growth Opportunities Fund – Direct Plan
                                 (Growth)
                               </td>
-                              <td className="px-3 py-2">27.41</td>
-                              <td className="px-3 py-2">19.46 (since 2018)</td>
+                              <td className="px-3 py-2 text-center">27.41</td>
+                              <td className="px-3 py-2 text-center">19.46 (since 2018)</td>
                               <td className="px-3 py-2">Very High</td>
                               <td className="px-3 py-2">
                                 Investors seeking diversified equity with global
@@ -485,8 +485,8 @@ export default function Axis() {
                               <td className="px-3 py-2">
                                 Axis ELSS Tax Saver Fund – Direct Plan (Growth)
                               </td>
-                              <td className="px-3 py-2">21.13</td>
-                              <td className="px-3 py-2">14.5</td>
+                              <td className="px-3 py-2 text-center">21.13</td>
+                              <td className="px-3 py-2 text-center">14.5</td>
                               <td className="px-3 py-2">Very High</td>
                               <td className="px-3 py-2">
                                 Investors seeking tax benefits under Section 80C
@@ -494,8 +494,8 @@ export default function Axis() {
                             </tr>
                             <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                               <td className="px-3 py-2">Axis Bluechip Fund – Direct Plan (Growth)</td>
-                              <td className="px-3 py-2">18.5</td>
-                              <td className="px-3 py-2">14.8</td>
+                              <td className="px-3 py-2 text-center">18.5</td>
+                              <td className="px-3 py-2 text-center">14.8</td>
                               <td className="px-3 py-2">High</td>
                               <td className="px-3 py-2">
                                 Investors seeking stable large-cap returns
@@ -505,8 +505,8 @@ export default function Axis() {
                               <td className="px-3 py-2">
                                 Axis Focused 25 Fund – Direct Plan (Growth)
                               </td>
-                              <td className="px-3 py-2">18.08</td>
-                              <td className="px-3 py-2">14.0</td>
+                              <td className="px-3 py-2 text-center">18.08</td>
+                              <td className="px-3 py-2 text-center">14.0</td>
                               <td className="px-3 py-2">Very High</td>
                               <td className="px-3 py-2">Investors seeking focused equity exposure</td>
                             </tr>
@@ -514,8 +514,8 @@ export default function Axis() {
                               <td className="px-3 py-2">
                                 Axis Equity Saver Fund – Direct Plan (Growth)
                               </td>
-                              <td className="px-3 py-2">17.44</td>
-                              <td className="px-3 py-2">11.74 (since 2015)</td>
+                              <td className="px-3 py-2 text-center">17.44</td>
+                              <td className="px-3 py-2 text-center">11.74 (since 2015)</td>
                               <td className="px-3 py-2">Moderately High</td>
                               <td className="px-3 py-2">
                                 Investors seeking hybrid equity-debt stability
@@ -526,8 +526,8 @@ export default function Axis() {
                                 Axis Balanced Advantage Fund – Direct Plan
                                 (Growth)
                               </td>
-                              <td className="px-3 py-2">16.86</td>
-                              <td className="px-3 py-2">12.39 (since 2017)</td>
+                              <td className="px-3 py-2 text-center">16.86</td>
+                              <td className="px-3 py-2 text-center">12.39 (since 2017)</td>
                               <td className="px-3 py-2">Moderately High</td>
                               <td className="px-3 py-2">
                                 Investors seeking dynamic equity-debt allocation
@@ -535,8 +535,8 @@ export default function Axis() {
                             </tr>
                             <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                               <td className="px-3 py-2">Axis Value Fund – Direct Plan (Growth)</td>
-                              <td className="px-3 py-2">23.48 (3-Year: 18.54)</td>
-                              <td className="px-3 py-2">N/A (since 2021)</td>
+                              <td className="px-3 py-2 text-center">23.48 (3-Year: 18.54)</td>
+                              <td className="px-3 py-2 text-center">N/A (since 2021)</td>
                               <td className="px-3 py-2">Very High</td>
                               <td className="px-3 py-2">
                                 Investors seeking undervalued stocks for
@@ -545,8 +545,8 @@ export default function Axis() {
                             </tr>
                             <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                               <td className="px-3 py-2">Axis Quant Fund – Direct Plan (Growth)</td>
-                              <td className="px-3 py-2">23.25 (3-Year: 13.05)</td>
-                              <td className="px-3 py-2">N/A (since 2021)</td>
+                              <td className="px-3 py-2 text-center">23.25 (3-Year: 13.05)</td>
+                              <td className="px-3 py-2 text-center">N/A (since 2021)</td>
                               <td className="px-3 py-2">Very High</td>
                               <td className="px-3 py-2">
                                 Investors seeking quantitative equity strategies

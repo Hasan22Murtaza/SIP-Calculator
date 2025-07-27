@@ -454,15 +454,15 @@ export default function Kotak() {
                       <tbody className=" border-b dark:border-gray-700 border-gray-200 text-[#434B5B] dark:text-[#7B8498]">
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak Small Cap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">37.93</td>
-                          <td className="px-3 py-2 ">22.3</td>
+                          <td className="px-3 py-2 text-center">37.93</td>
+                          <td className="px-3 py-2 text-center">22.3</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Aggressive investors with 7-10 year horizon</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak Emerging Equity Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">34.43</td>
-                          <td className="px-3 py-2 ">22.7</td>
+                          <td className="px-3 py-2 text-center">34.43</td>
+                          <td className="px-3 py-2 text-center">22.7</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking mid-cap growth with high risk</td>
                         </tr>
@@ -470,8 +470,8 @@ export default function Kotak() {
                           <td className="px-3 py-2 ">
                             Kotak Equity Opportunities Fund – Direct Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">29.26</td>
-                          <td className="px-3 py-2 ">18.5</td>
+                          <td className="px-3 py-2 text-center">29.26</td>
+                          <td className="px-3 py-2 text-center">18.5</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking balanced large and mid-cap exposure
@@ -479,15 +479,15 @@ export default function Kotak() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak ELSS Tax Saver Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">28.09</td>
-                          <td className="px-3 py-2 ">18.2</td>
+                          <td className="px-3 py-2 text-center">28.09</td>
+                          <td className="px-3 py-2 text-center">18.2</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">Investors seeking tax benefits under Section 80C</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak Flexicap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">25.57</td>
-                          <td className="px-3 py-2 ">16.8</td>
+                          <td className="px-3 py-2 text-center">25.57</td>
+                          <td className="px-3 py-2 text-center">16.8</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking diversified equity across market caps
@@ -495,8 +495,8 @@ export default function Kotak() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak Multicap Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">21.45 (3-Year)</td>
-                          <td className="px-3 py-2 ">N/A (since 2021)</td>
+                          <td className="px-3 py-2 text-center">21.45 (3-Year)</td>
+                          <td className="px-3 py-2 text-center">N/A (since 2021)</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">Investors seeking diversified multi-cap growth</td>
                         </tr>
@@ -505,8 +505,8 @@ export default function Kotak() {
                             Kotak Infrastructure &amp; Economic Reform Fund – Direct
                             Plan (Growth)
                           </td>
-                          <td className="px-3 py-2 ">21.0</td>
-                          <td className="px-3 py-2 ">19.5</td>
+                          <td className="px-3 py-2 text-center">21.0</td>
+                          <td className="px-3 py-2 text-center">19.5</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking thematic infrastructure exposure
@@ -514,22 +514,22 @@ export default function Kotak() {
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak Equity Hybrid Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">20.5</td>
-                          <td className="px-3 py-2 ">14.8</td>
+                          <td className="px-3 py-2 text-center">20.5</td>
+                          <td className="px-3 py-2 text-center">14.8</td>
                           <td className="px-3 py-2 ">Moderately High</td>
                           <td className="px-3 py-2 ">Investors seeking hybrid equity-debt stability</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak Bluechip Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">19.8</td>
-                          <td className="px-3 py-2 ">15.3</td>
+                          <td className="px-3 py-2 text-center">19.8</td>
+                          <td className="px-3 py-2 text-center">15.3</td>
                           <td className="px-3 py-2 ">High</td>
                           <td className="px-3 py-2 ">Investors seeking stable large-cap returns</td>
                         </tr>
                         <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                           <td className="px-3 py-2 ">Kotak Business Cycle Fund – Direct Plan (Growth)</td>
-                          <td className="px-3 py-2 ">19.0 (3-Year)</td>
-                          <td className="px-3 py-2 ">N/A (since 2022)</td>
+                          <td className="px-3 py-2 text-center">19.0 (3-Year)</td>
+                          <td className="px-3 py-2 text-center">N/A (since 2022)</td>
                           <td className="px-3 py-2 ">Very High</td>
                           <td className="px-3 py-2 ">
                             Investors seeking thematic cyclical sector exposure

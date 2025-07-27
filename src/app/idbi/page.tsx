@@ -489,15 +489,15 @@ export default function Idbi() {
                   <tbody className=" border-b dark:border-gray-700 border-gray-200 text-[#434B5B] dark:text-[#7B8498]">
                     <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                       <td className="px-3 py-2 ">IDBI Midcap Fund – Direct Plan (Growth)</td>
-                      <td className="px-3 py-2 ">26.36</td>
-                      <td className="px-3 py-2 ">12.49 (since 2017)</td>
+                      <td className="px-3 py-2 text-center">26.36</td>
+                      <td className="px-3 py-2 text-center">12.49 (since 2017)</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">Investors seeking mid-cap growth with high risk</td>
                     </tr>
                     <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                       <td className="px-3 py-2 ">IDBI Flexi Cap Fund – Direct Plan (Growth)</td>
-                      <td className="px-3 py-2 ">13.58</td>
-                      <td className="px-3 py-2 ">12.5</td>
+                      <td className="px-3 py-2 text-center">13.58</td>
+                      <td className="px-3 py-2 text-center">12.5</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking diversified equity across market caps
@@ -507,15 +507,15 @@ export default function Idbi() {
                       <td className="px-3 py-2 ">
                         IDBI India Top 100 Equity Fund – Direct Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">12.59</td>
-                      <td className="px-3 py-2 ">14.17</td>
+                      <td className="px-3 py-2 text-center">12.59</td>
+                      <td className="px-3 py-2 text-center">14.17</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">Investors seeking stable large-cap returns</td>
                     </tr>
                     <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                       <td className="px-3 py-2 ">IDBI Equity Advantage Fund – Direct Plan (Growth)</td>
-                      <td className="px-3 py-2 ">11.37</td>
-                      <td className="px-3 py-2 ">14.0</td>
+                      <td className="px-3 py-2 text-center">11.37</td>
+                      <td className="px-3 py-2 text-center">14.0</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking tax-saving ELSS with long-term growth
@@ -525,8 +525,8 @@ export default function Idbi() {
                       <td className="px-3 py-2 ">
                         IDBI Focused 30 Equity Fund – Direct Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">11.43</td>
-                      <td className="px-3 py-2 ">11.06 (since 2017)</td>
+                      <td className="px-3 py-2 text-center">11.43</td>
+                      <td className="px-3 py-2 text-center">11.06 (since 2017)</td>
                       <td className="px-3 py-2 ">Very High</td>
                       <td className="px-3 py-2 ">Investors seeking focused equity exposure</td>
                     </tr>
@@ -534,8 +534,8 @@ export default function Idbi() {
                       <td className="px-3 py-2 ">
                         IDBI Nifty Next 50 Index Fund – Direct Plan (Growth)
                       </td>
-                      <td className="px-3 py-2 ">9.56</td>
-                      <td className="px-3 py-2 ">11.5</td>
+                      <td className="px-3 py-2 text-center">9.56</td>
+                      <td className="px-3 py-2 text-center">11.5</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">
                         Investors seeking passive exposure to Nifty Next 50
@@ -543,29 +543,29 @@ export default function Idbi() {
                     </tr>
                     <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                       <td className="px-3 py-2 ">IDBI Nifty Index Fund – Direct Plan (Growth)</td>
-                      <td className="px-3 py-2 ">10.3</td>
-                      <td className="px-3 py-2 ">10.3</td>
+                      <td className="px-3 py-2 text-center">10.3</td>
+                      <td className="px-3 py-2 text-center">10.3</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">Investors seeking passive exposure to Nifty 50</td>
                     </tr>
                     <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                       <td className="px-3 py-2 ">IDBI Equity Savings Fund – Direct Plan (Growth)</td>
-                      <td className="px-3 py-2 ">7.79</td>
-                      <td className="px-3 py-2 ">8.5</td>
+                      <td className="px-3 py-2 text-center">7.79</td>
+                      <td className="px-3 py-2 text-center">8.5</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">Investors seeking hybrid equity-debt stability</td>
                     </tr>
                     <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                       <td className="px-3 py-2 ">IDBI Hybrid Equity Fund – Direct Plan (Growth)</td>
-                      <td className="px-3 py-2 ">7.5</td>
-                      <td className="px-3 py-2 ">8.0 (since 2016)</td>
+                      <td className="px-3 py-2 text-center">7.5</td>
+                      <td className="px-3 py-2 text-center">8.0 (since 2016)</td>
                       <td className="px-3 py-2 ">Moderately High</td>
                       <td className="px-3 py-2 ">Investors seeking balanced equity-debt returns</td>
                     </tr>
                     <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                       <td className="px-3 py-2 ">IDBI Gold Fund – Direct Plan (Growth)</td>
-                      <td className="px-3 py-2 ">13.58</td>
-                      <td className="px-3 py-2 ">5.5</td>
+                      <td className="px-3 py-2 text-center">13.58</td>
+                      <td className="px-3 py-2 text-center">5.5</td>
                       <td className="px-3 py-2 ">Moderate</td>
                       <td className="px-3 py-2 ">
                         Investors seeking gold-based exposure with moderate risk

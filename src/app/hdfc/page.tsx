@@ -622,8 +622,8 @@ export default function Axis() {
                         <td className="px-3 py-2 ">
                           HDFC Mid-Cap Opportunities Fund – Direct Plan (Growth)
                         </td>
-                        <td className="px-3 py-2 ">34.34</td>
-                        <td className="px-3 py-2 ">17.4</td>
+                        <td className="px-3 py-2 text-center">34.34</td>
+                        <td className="px-3 py-2 text-center">17.4</td>
                         <td className="px-3 py-2 ">Moderately High</td>
                         <td className="px-3 py-2 ">
                           Investors seeking mid-cap growth with moderate risk
@@ -631,15 +631,15 @@ export default function Axis() {
                       </tr>
                       <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                         <td className="px-3 py-2 ">HDFC Focused 30 Fund – Direct Plan (Growth)</td>
-                        <td className="px-3 py-2 ">33.82</td>
-                        <td className="px-3 py-2 ">16.2</td>
+                        <td className="px-3 py-2 text-center">33.82</td>
+                        <td className="px-3 py-2 text-center">16.2</td>
                         <td className="px-3 py-2 ">Moderately High</td>
                         <td className="px-3 py-2 ">Investors seeking focused equity exposure</td>
                       </tr>
                       <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                         <td className="px-3 py-2 ">HDFC Flexi Cap Fund – Direct Plan (Growth)</td>
-                        <td className="px-3 py-2 ">31.87</td>
-                        <td className="px-3 py-2 ">18.2</td>
+                        <td className="px-3 py-2 text-center">31.87</td>
+                        <td className="px-3 py-2 text-center ">18.2</td>
                         <td className="px-3 py-2 ">Moderately High</td>
                         <td className="px-3 py-2 ">
                           Investors seeking flexibility and balanced risk-return
@@ -647,15 +647,15 @@ export default function Axis() {
                       </tr>
                       <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                         <td className="px-3 py-2 ">HDFC Small Cap Fund – Direct Plan (Growth)</td>
-                        <td className="px-3 py-2 ">28.0</td>
-                        <td className="px-3 py-2 ">18.68</td>
+                        <td className="px-3 py-2 text-center">28.0</td>
+                        <td className="px-3 py-2 text-center">18.68</td>
                         <td className="px-3 py-2 ">Very High</td>
                         <td className="px-3 py-2 ">Aggressive investors with 7-10 year horizon</td>
                       </tr>
                       <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                         <td className="px-3 py-2 ">HDFC Tax Saver Fund – Direct Plan (Growth)</td>
-                        <td className="px-3 py-2 ">27.5</td>
-                        <td className="px-3 py-2 ">14.8</td>
+                        <td className="px-3 py-2 text-center">27.5</td>
+                        <td className="px-3 py-2 text-center">14.8</td>
                         <td className="px-3 py-2 ">Moderately High</td>
                         <td className="px-3 py-2 ">
                           Investors seeking tax benefits under Section 80C
@@ -663,8 +663,8 @@ export default function Axis() {
                       </tr>
                       <tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]">
                         <td className="px-3 py-2 ">HDFC Infrastructure Fund – Direct Plan (Growth)</td>
-                        <td className="px-3 py-2 ">26.19</td>
-                        <td className="px-3 py-2 ">12.17</td>
+                        <td className="px-3 py-2 text-center">26.19</td>
+                        <td className="px-3 py-2 text-center">12.17</td>
                         <td className="px-3 py-2 ">High</td>
                         <td className="px-3 py-2 ">
                           Investors seeking sectoral exposure to infrastructure
@@ -674,8 +674,8 @@ export default function Axis() {
                         <td className="px-3 py-2 ">
                           HDFC Long Term Advantage Fund – Direct Plan (Growth)
                         </td>
-                        <td className="px-3 py-2 ">25.0</td>
-                        <td className="px-3 py-2 ">21.4</td>
+                        <td className="px-3 py-2 text-center">25.0</td>
+                        <td className="px-3 py-2 text-center">21.4</td>
                         <td className="px-3 py-2 ">Moderately High</td>
                         <td className="px-3 py-2 ">
                           Investors seeking tax-saving ELSS with long-term
@@ -686,8 +686,8 @@ export default function Axis() {
                         <td className="px-3 py-2 ">
                           HDFC Growth Opportunities Fund – Direct Plan (Growth)
                         </td>
-                        <td className="px-3 py-2 ">24.5</td>
-                        <td className="px-3 py-2 ">12.8</td>
+                        <td className="px-3 py-2 text-center">24.5</td>
+                        <td className="px-3 py-2 text-center">12.8</td>
                         <td className="px-3 py-2 ">Moderately High</td>
                         <td className="px-3 py-2 ">Investors seeking large &amp; mid-cap exposure</td>
                       </tr>
@@ -695,8 +695,8 @@ export default function Axis() {
                         <td className="px-3 py-2 ">
                           HDFC Balanced Advantage Fund – Direct Plan (Growth)
                         </td>
-                        <td className="px-3 py-2 ">23.5</td>
-                        <td className="px-3 py-2 ">18.11</td>
+                        <td className="px-3 py-2 text-center">23.5</td>
+                        <td className="px-3 py-2 text-center">18.11</td>
                         <td className="px-3 py-2 ">Moderately High</td>
                         <td className="px-3 py-2 ">Investors seeking hybrid equity-debt stability</td>
                       </tr>
@@ -705,8 +705,8 @@ export default function Axis() {
                           HDFC Retirement Savings Fund – Equity – Direct Plan
                           (Growth)
                         </td>
-                        <td className="px-3 py-2 ">22.0</td>
-                        <td className="px-3 py-2 ">19.46 (since 2016)</td>
+                        <td className="px-3 py-2 text-center">22.0</td>
+                        <td className="px-3 py-2 text-center">19.46 (since 2016)</td>
                         <td className="px-3 py-2 ">High</td>
                         <td className="px-3 py-2 ">
                           Investors planning for retirement with aggressive
