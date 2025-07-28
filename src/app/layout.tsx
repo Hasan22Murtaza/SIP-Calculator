@@ -401,9 +401,8 @@ export default function RootLayout({
 
   switch (path) {
     case "/":
-      meta.title = "SIP Calculator - Plan Your Wealth Creation";
-      meta.description =
-        "Plan your wealth creation with our advanced SIP calculator. Estimate your returns and grow your investments effectively.";
+      meta.title = "All SIP & lumpsum Calculator - Get Rich SIP by SIP";
+      meta.description = "Use our all-in-one SIP & lumpsum calculator to estimate returns, compare strategies, and build wealth step-by-step.";
       break;
     case "/sip-vs-lumpsum":
       meta.title = "SIP vs Lumpsum Investment: Which one is Best?";
@@ -477,9 +476,8 @@ export default function RootLayout({
         "Read the terms of service for using the SIP calculator and understand your rights and responsibilities.";
       break;
     case "/scholarship":
-      meta.title = "Scholarship - SIP Calculator";
-      meta.description =
-        "Explore scholarship opportunities that promote financial literacy and investment education through SIP planning.";
+      meta.title = "All SIP Calculator $1000 Scholarship Program";
+      meta.description = "Apply for the $1000 SIP Calculator Scholarship Program—supporting students who demonstrate financial planning skills and investment insight.";
       break;
     default:
       break;

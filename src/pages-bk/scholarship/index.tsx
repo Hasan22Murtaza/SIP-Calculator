@@ -18,10 +18,10 @@ export default function Terms() {
           <div className="max-w-6xl mx-auto px-3 h-full flex items-center justify-center">
             <h1 className="font-raleway text-center leading-[48px] text-2xl md:text-[40px] text-my-black dark:text-white font-bold lg:max-w-[700px]" >
               {" "}
-              The Most Accurate SIP Calculator To
+              All SIP Calculator $1000 
               <span className="text-dark-green">
                 {" "}
-                Get Rich SIP by SIP{" "}
+                Scholarship Program{" "}
               </span>{" "}
             </h1>
           </div>
@@ -147,7 +147,7 @@ export default function Terms() {
                           In the same document (or email), please include:
                         </p>
                         <ul className="wp-block-list flex flex-col gap-2 list-disc pl-5 mb-5">
-                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]">Email your entry to: <a className="text-dark-green" target="_blank" href="http://localhost:3000">scholarship@allsipcalculator.in</a></li>
+                          <li className="text-base text-[#434B5B] dark:text-[#7B8498]">Email your entry to: <a className="text-dark-green" target="_blank" href="https://allsipcalculator.in">scholarship@allsipcalculator.in</a></li>
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">Use this subject line: All SIP Calculator Scholarship Application – [Your Full Name]</li>
 
                         </ul>
@@ -160,7 +160,7 @@ export default function Terms() {
                           </span>
                         </h3>
                         <div className="block">
-                          <figure className="wp-block-table is-style-stripes"><table className="has-fixed-layout w-full text-sm text-left  rounded-lg border-separate">   <thead className="text-SM text-my-black   dark:text-white border-b-2 border-[#DCD7D7]  dark:border-[#263c6b]"><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><th className="px-3 py-2">Event</th><th className="px-3 py-2">Date</th></tr></thead><tbody className=" border-b dark:border-gray-700 border-gray-200 text-[#434B5B] dark:text-[#7B8498]"><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Applications Open</td><td className="px-3 py-2 ">Already open</td></tr><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Final Deadline</td><td className="px-3 py-2 ">June 20, 2026</td></tr><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Winner Announced</td><td className="px-3 py-2 ">August 1, 2026</td></tr><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Prize Released</td><td className="px-3 py-2 ">By August 10, 2026</td></tr></tbody></table></figure>
+                          <figure className="wp-block-table is-style-stripes"><table className="has-fixed-layout w-full text-sm text-left  rounded-lg border-separate">   <thead className="text-SM text-my-black   dark:text-white border-b-2 border-[#DCD7D7]  dark:border-[#263c6b]"><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><th className="px-3 py-2">Event</th><th className="px-3 py-2">Date</th></tr></thead><tbody className=" border-b dark:border-gray-700 border-gray-200 text-[#434B5B] dark:text-[#7B8498]"><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Applications Open</td><td className="px-3 py-2 ">Already open</td></tr><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Final Deadline</td><td className="px-3 py-2 ">November 20, 2026</td></tr><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Winner Announced</td><td className="px-3 py-2 ">January 1, 2027</td></tr><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Prize Released</td><td className="px-3 py-2 ">By January 11, 2027</td></tr><tr className="border-b border-[#DCD7D7]  dark:border-[#263c6b]"><td className="px-3 py-2 ">Recurring Scholarship?</td><td className="px-3 py-2 ">Yes</td></tr></tbody></table></figure>
                         </div>
                         <h2 className="lg:text-4xl text-xl text-my-black font-semibold dark:text-white pt-5 pb-5">
                           <span id="How_the_SBI_SIP_Calculator_Helps_Investors">
