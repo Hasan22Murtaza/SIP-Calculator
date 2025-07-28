@@ -500,6 +500,7 @@ export default function RootLayout({
           <title>{title}</title>
           <meta name="description" content={description} />
           <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+          <meta name="google-site-verification" content="Iw0pw6bKUFR-rTXETz22grjk7mQ-S1EzAh0hhdRMEzE" />
 
           {/* css links */}
 
