@@ -402,7 +402,7 @@ export default function RootLayout({
   switch (path) {
     case "/":
       meta.title = "All SIP & lumpsum Calculator - Get Rich SIP by SIP";
-      meta.description = "Use our all-in-one SIP & lumpsum calculator to estimate returns, compare strategies, and build wealth step-by-step.";
+      meta.description = "Want to retire rich? Our SIP Calculator shows exactly how. Enter your amount & watch your wealth grow. Try it now – it's 100% free!";
       break;
     case "/sip-vs-lumpsum":
       meta.title = "SIP vs Lumpsum Investment: Which one is Best?";
@@ -418,47 +418,47 @@ export default function RootLayout({
       meta.title =
         "Axis Bank SIP Calculator – Calculate Your SIP Investment Accurately";
       meta.description =
-        "Use our Axis Bank SIP calculator to precisely estimate your investment returns and plan better.";
+        "Want to know how much your Axis Bank SIP will grow? Use our powerful SIP Calculator & get instant future value! Try now – it's free!";
       break;
     case "/hdfc":
       meta.title = "HDFC Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Calculate your HDFC SIP returns accurately using our reliable and user-friendly SIP calculator.";
+        "Planning an HDFC SIP? Use our HDFC Bank SIP Calculator to see how fast your money can grow. Estimate returns instantly – start now!";
       break;
     case "/icici":
       meta.title = "ICICI Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Plan and calculate your SIP returns with ICICI using our easy and accurate SIP calculator.";
+        "Planning an ICICI SIP? Use our ICICI Bank SIP Calculator to estimate your wealth growth in seconds. Fast, free, and accurate – try now!";
       break;
     case "/idbi":
       meta.title = "IDBI Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Get precise return estimates for your IDBI SIP investments with our tailored calculator.";
+        "Investing with IDBI? Use our IDBI Bank SIP Calculator to see how much your SIP will grow. Fast, free, and beginner-friendly. Try it now!";
       break;
     case "/kotak":
       meta.title = "Kotak Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Use our Kotak SIP calculator to get accurate projections and plan your financial future with ease.";
+        "Want to grow your money with Kotak SIP? Use our Kotak Bank SIP Calculator to get instant return estimates. Fast, free & beginner-friendly!";
       break;
     case "/lic":
       meta.title = "LIC Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Accurately calculate your LIC SIP investments and returns using our trusted calculator.";
+        "Planning to invest in LIC Mutual Funds? Use our LIC Bank SIP Calculator to see how your money can grow! Fast, free & super easy—try now!August 1, 2026";
       break;
     case "/nippon":
       meta.title = "Nippon Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Easily estimate your returns from Nippon SIP investments with our accurate online calculator.";
+        "Want to grow your money with Nippon SIPs? Use our Nippon Bank SIP Calculator to see future returns instantly. Start planning now!";
       break;
     case "/pnb":
       meta.title = "PNB Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Get reliable SIP return estimates for PNB investments using our efficient calculator.";
+        "Investing with PNB? Use our PNB Bank SIP Calculator to see how your monthly SIP turns into wealth. Quick, free & easy to use—try it now!";
       break;
     case "/sbi":
       meta.title = "SBI Bank SIP Calculator – Calculate Your SIP Investment";
       meta.description =
-        "Plan your SIP investments with SBI and calculate returns using our highly accurate SIP calculator.";
+        "How much can your SBI SIP grow? Use our SBI Bank SIP Calculator to find out instantly. Fast, accurate & free—plan your future today!";
       break;
     case "/disclaimer":
       meta.title = "Disclaimer - SIP Calculator";

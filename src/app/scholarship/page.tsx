@@ -64,16 +64,16 @@ export default function Terms() {
                             <span className="text-my-black dark:text-white font-medium">Award Amount:</span> $1000 USD
                           </li>
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
-                            <span className="text-my-black dark:text-white font-medium">Application Deadline:</span> June 20, 2026
+                            <span className="text-my-black dark:text-white font-medium">Application Deadline:</span> November 20, 2026
                           </li>
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
-                            <span className="text-my-black dark:text-white font-medium">Winner Announcement: </span>August 1, 2026
+                            <span className="text-my-black dark:text-white font-medium">Winner Announcement: </span>January 1, 2027
                           </li>
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
                             <span className="text-my-black dark:text-white font-medium">Number of Recipients:</span> One selected student
                           </li>
                           <li className="text-base text-[#434B5B] dark:text-[#7B8498]">
-                            <span className="text-my-black dark:text-white font-medium">Open To: Global appli</span>cants
+                            <span className="text-my-black dark:text-white font-medium">Open To:</span> Global applicants
                           </li>
                         </ul>
 
